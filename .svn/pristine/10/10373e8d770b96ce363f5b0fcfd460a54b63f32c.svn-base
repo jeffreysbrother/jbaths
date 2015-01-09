@@ -1050,7 +1050,7 @@ body.touch .main-navigation ul li.open > ul {
 	background: #464646;
 	color: #fff;
 	display: block;
-	/*float: left;*/
+	float: left;
 	width: 100%;
 	position: relative;
 	z-index: 8;
@@ -1072,12 +1072,6 @@ body.touch .main-navigation ul li.open > ul {
 	padding: 0.35em 3.5em;
 	text-align: center;
 	text-transform: uppercase;
-}
-.single-post .entry-header h1.entry-title {
-	font-size: 2.5em;
-	line-height: 1.2em;
-	padding: .4em 0;
-	width: 960px; /* boxed width */
 }
 .entry-header h1.entry-title a {
 	color: #fff;
@@ -2091,7 +2085,7 @@ body.single-post .comments-area .comment-respond {
 	max-width: 1080px;
 }
 body.single-post article .entry-content {
-	padding-top: 40px;
+	padding-top: 96px;
 }
 body.single-post article .entry-footer {
 	padding-bottom: 40px;

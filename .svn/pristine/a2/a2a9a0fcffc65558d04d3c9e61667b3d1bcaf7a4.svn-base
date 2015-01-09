@@ -1073,11 +1073,8 @@ body.touch .main-navigation ul li.open > ul {
 	text-align: center;
 	text-transform: uppercase;
 }
-.single-post .entry-header h1.entry-title {
+.entry-header h1.entry-title {
 	font-size: 2.5em;
-	line-height: 1.2em;
-	padding: .4em 0;
-	width: 960px; /* boxed width */
 }
 .entry-header h1.entry-title a {
 	color: #fff;
