@@ -71,7 +71,7 @@ function jbaths_scripts() {
 	// wtf
 	wp_enqueue_style( 'wtf-forms', get_template_directory_uri() . '/css/wtf-forms.css', array(), '2.2.0' );
 	// and then
-	wp_enqueue_style( 'jbaths', get_stylesheet_uri(), array(), $theme->Version );
+	wp_enqueue_style( 'jbaths', get_stylesheet_uri(), array(), $theme->Version.'.1' );
 
 	// store locator plus - specialty css
 	if ( is_page('find-a-showroom') ) {
