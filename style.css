@@ -2065,6 +2065,14 @@ header.search-result-header div.entry-meta {
 header.search-result-header div.entry-meta {
 	display: none;
 }
+ul.search-results li {
+	display: inline-block;
+	margin: 0;
+	max-width: 50%;
+	min-width: 240px;
+	vertical-align: top;
+	width: 25%;
+}
 
 
 /*--------------------------------------------------------------

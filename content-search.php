@@ -11,6 +11,9 @@ global $post;
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="search-result-header">
 				<?php the_title( '', '' ); ?>
+				<?php if ( has_post_thumbnail() ) { ?>
+					<?php the_post_thumbnail('small'); ?>
+				<?php } ?>
 				<?php the_excerpt(); ?>
 				<div class="entry-meta">
 					<?php jbaths_posted_on(); ?>
