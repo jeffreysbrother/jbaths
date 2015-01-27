@@ -605,3 +605,14 @@ function jbaths_qvars($aVars) {
 	return $aVars;
 }
 add_filter( 'query_vars', 'jbaths_qvars' );
+
+
+
+add_filter('post_limits', 'jbaths_postsperpage');
+function jbaths_postsperpage($limits) {
+	if (is_search()) {
+		global $wp_query;
+		$wp_query->query_vars['posts_per_page'] = 16;
+	}
+	return $limits;
+}
