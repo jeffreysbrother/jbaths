@@ -2071,13 +2071,14 @@ body.search div.site-content ul.search-results li {
 	vertical-align: top;
 	width: 24%;
 }
+body.search div.site-content ul.search-results li a {
+	text-decoration: none;
+}
 body.search div.site-content ul.search-results li header {
 	margin-bottom: 6px;
 }
-body.search div.site-content ul.search-results li header h2 {}
-body.search div.site-content ul.search-results li header h2 a {
+body.search div.site-content ul.search-results li header h2 {
 	color: #404040;
-	text-decoration: none;
 }
 body.search div.site-content ul.search-results li section {}
 body.search div.site-content ul.search-results li section.search-content {
@@ -2086,7 +2087,9 @@ body.search div.site-content ul.search-results li section.search-content {
 body.search div.site-content ul.search-results li section.search-content img {
 	text-align: center;
 }
-body.search div.site-content ul.search-results li section.search-excerpt {}
+body.search div.site-content ul.search-results li section.search-excerpt p {
+	color: #404040;
+}
 body.search div.site-content ul.search-results li .entry-meta {
 	display: none;
 }
