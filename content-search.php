@@ -31,7 +31,7 @@ if ( wp_get_attachment_url( $post->ID ) ) {
 					<?php //the_post_thumbnail('small'); ?>
 
 				<?php } else if ( wp_attachment_is_image( $post->ID ) ) { ?>
-					<?php echo wp_get_attachment_image( $post->ID, 'small' ); ?>
+					<?php //echo wp_get_attachment_image( $post->ID, 'small' ); ?>
 					<p>File type: <?php echo $post->post_mime_type; ?></p>
 
 				<?php } else if ( $post->post_mime_type == 'application/pdf' ) { ?>
