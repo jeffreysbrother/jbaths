@@ -28,7 +28,7 @@ if ( wp_get_attachment_url( $post->ID ) ) {
 
 			<section class="search-content">
 				<?php if ( has_post_thumbnail() ) { ?>
-					<?php the_post_thumbnail('small'); ?>
+					<?php //the_post_thumbnail('small'); ?>
 
 				<?php } else if ( wp_attachment_is_image( $post->ID ) ) { ?>
 					<?php echo wp_get_attachment_image( $post->ID, 'small' ); ?>
