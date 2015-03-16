@@ -169,7 +169,7 @@ echo "\n\nclasses = $fclasses";
 <?php
 $ld = types_render_field( 'limited-distribution' );
 if ( $ld ) { ?>
-	<div>Limited Distribution</div><i>LD</i>
+	<div>Limited Distribution</div>
 <?php } ?>
 			</div>
 			<div class="wpb_text_column wpb_content_element dets">
