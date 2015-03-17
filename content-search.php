@@ -34,7 +34,9 @@ if ( wp_get_attachment_url( $post->ID ) ) {
 
 			<?php if ( ! $attachment ) { ?>
 			<section class="search-excerpt">
-				<?php the_excerpt(); ?>
+				<p>
+					<?php the_excerpt(); ?>
+				</p>
 			</section>
 			<?php } ?>
 
