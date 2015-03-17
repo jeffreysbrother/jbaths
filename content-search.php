@@ -26,24 +26,17 @@ if ( wp_get_attachment_url( $post->ID ) ) {
 				</h2>
 			</header><!-- .entry-header -->
 
+			<?php if ( $post->post_mime_type == 'application/pdf' ) { ?>
 			<section class="search-content">
-				<?php if ( has_post_thumbnail() ) { ?>
-					<?php //the_post_thumbnail('small'); ?>
-
-				<?php } else if ( wp_attachment_is_image( $post->ID ) ) { ?>
-					<?php //echo wp_get_attachment_image( $post->ID, 'small' ); ?>
-					<?php /* <p>File type: <?php echo $post->post_mime_type; ?></p> */ ?>
-
-				<?php } else if ( $post->post_mime_type == 'application/pdf' ) { ?>
-					<a href="<?php echo wp_get_attachment_url( $post->ID ); ?>">Download</a>
-					<?php /* <p>File type: <?php echo $post->post_mime_type; ?></p> */ ?>
-
-				<?php } ?>
+				<a href="<?php echo wp_get_attachment_url( $post->ID ); ?>">Download</a>
 			</section>
+			<?php } ?>
 
+			<?php if ( ! $attachment ) { ?>
 			<section class="search-excerpt">
 				<?php the_excerpt(); ?>
 			</section>
+			<?php } ?>
 
 			<div class="entry-meta">
 				<?php jbaths_posted_on(); ?>
