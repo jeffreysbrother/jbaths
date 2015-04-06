@@ -77,7 +77,7 @@ while ( $f-- ) {
 	}
 	$filters[$f][1] = get_terms( $fname, $args );
 
-	echo '<div class="vc_span2 wpb_column column_container chx fcol-'. $fname .'"><div class="wpb_wrapper"><div class="wpb_text_column wpb_content_element"><div class="wpb_wrapper"><h4>'. strtoupper( $fname ) .'</h4><p>';
+	echo '<div class="vc_span2 vc_col-sm-2 wpb_column column_container chx fcol-'. $fname .'"><div class="wpb_wrapper"><div class="wpb_text_column wpb_content_element"><div class="wpb_wrapper"><h4>'. strtoupper( $fname ) .'</h4><p>';
 
 	$c = count($filters[$f][1]);
 	while ( $c-- ) {
@@ -157,7 +157,7 @@ echo "\n\nclasses = $fclasses";
 </pre>
 */ 
 ?>
-	<div class="vc_span3 wpb_column column_container <?php esc_attr_e($fclasses); echo $sizeattr; ?>">
+	<div class="vc_span3 vc_col-sm-3 wpb_column column_container <?php esc_attr_e($fclasses); echo $sizeattr; ?>">
 		<div class="wpb_wrapper">
 			<a href="<?php echo get_permalink(); ?>">
 			<div class="wpb_single_image wpb_content_element vc_align_center">
