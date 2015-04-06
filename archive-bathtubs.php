@@ -18,7 +18,7 @@ get_header(); ?>
 		<div class="entry-content">
 			<div class="baths-filters">
 				<div class="wpb_row vc_row-fluid">
-	<div class="vc_span2 wpb_column column_container fcol-size"><div class="wpb_wrapper"><div class="wpb_text_column wpb_content_element"><div class="wpb_wrapper"><h4>SIZE</h4>
+	<div class="vc_span2 vc_col-sm-2 wpb_column column_container fcol-size"><div class="wpb_wrapper"><div class="wpb_text_column wpb_content_element"><div class="wpb_wrapper"><h4>SIZE</h4>
 <p><select name="length" id="filter-length">
 <option value="">Length</option>
 <?php
@@ -90,9 +90,10 @@ while ( $f-- ) {
 ?>
 				</div>
 				<div class="wpb_row vc_row-fluid">
-				<div class="vc_span12">
+				<div class="vc_span12 vc_col-sm-12">
 <a href="#filter" class="vc_btn vc_btn_grey vc_btn_xs vc_btn_square_outlined alignright">CLEAR</a>
 				</div>
+				<div class="clearfix"></div>
 				</div>
 			</div>
 <?php
