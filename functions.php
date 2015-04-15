@@ -616,3 +616,12 @@ function jbaths_postsperpage($limits) {
 	}
 	return $limits;
 }
+
+function my_searchwp_query_orderby() {
+	global $wpdb;
+	return "ORDER BY {$wpdb->prefix}posts.post_type DESC, {$wpdb->prefix}posts.post_date DESC";
+}
+
+add_filter( 'searchwp_query_orderby', 'my_searchwp_query_orderby' );
+
+

@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/search.css" type="text/css" media="all">
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
