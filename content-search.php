@@ -30,7 +30,7 @@ if ( wp_get_attachment_url( $post->ID ) ) {
 
 			<?php if ( $post->post_mime_type == 'application/pdf' ) { ?>
 			<section class="search-content">
-				<a href="<?php echo wp_get_attachment_url( $post->ID ); ?>" alt="Download PDF" title="Download PDF"><img src="<?php bloginfo('template_url') ?>/images/pdf_download.png"  alt="Download PDF"/></a>
+				<a href="<?php echo wp_get_attachment_url( $post->ID ); ?>" alt="Download PDF" title="Download PDF"><img src="<?php echo get_template_directory_uri(); ?>/images/pdf_download.png"  alt="Download PDF"/></a>
 			</section>
 			<?php } ?>
 
