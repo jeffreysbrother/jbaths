@@ -2062,6 +2062,7 @@ body.search div.site-content ul.search-results {
 	margin: 0;
 	padding: 0;
 }
+/*
 body.search div.site-content ul.search-results li {
 	box-sizing: border-box;
 	display: inline-block;
@@ -2071,6 +2072,7 @@ body.search div.site-content ul.search-results li {
 	vertical-align: top;
 	width: 24%;
 }
+*/
 body.search div.site-content ul.search-results li a {
 	text-decoration: none;
 }
@@ -2332,3 +2334,10 @@ object {
 .gallery-caption {}
 
 
+h2.pdf-heading
+{
+	padding-right: 70px;
+	line-height: 70px !important;
+	background: url("images/pdf_download.png") right center no-repeat transparent;
+	display: inline-block;	
+}
