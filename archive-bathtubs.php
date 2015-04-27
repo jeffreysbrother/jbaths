@@ -88,6 +88,7 @@ while ( $f-- ) {
 }
 //print_r($filters);
 ?>
+					<div class="clearfix"></div>
 				</div>
 				<div class="wpb_row vc_row-fluid">
 				<div class="vc_span12 vc_col-sm-12">

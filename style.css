@@ -2334,3 +2334,10 @@ object {
 .gallery-caption {}
 
 
+h2.pdf-heading
+{
+	padding-right: 70px;
+	line-height: 70px !important;
+	background: url("images/pdf_download.png") right center no-repeat transparent;
+	display: inline-block;	
+}
