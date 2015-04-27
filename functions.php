@@ -88,7 +88,7 @@ function jbaths_scripts() {
 		$jbaths_deps = array( 'jquery', 'jbaths.modernizr', 'jquery.cookie', 'scrollupforwhat', 'matchHeight' );
 		if ( is_singular( 'bathtubs' ) || is_singular( 'faucets' ) ) {
 			if(get_option('ultimate_row') == "enable"){
-				$jbaths_deps[] = 'ultimate-row-bg';
+				//$jbaths_deps[] = 'ultimate-row-bg';
 			}
 		}
 		wp_enqueue_script( 'jbaths', get_template_directory_uri() . '/js/baths.js', $jbaths_deps, '20140718', true );
