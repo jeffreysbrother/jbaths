@@ -1857,12 +1857,15 @@ h5 a:visited:hover {
 {
 	padding: 40px 20px;
 	text-align: center;
+	float: left;
+	widows: 50%;
 }
 
 
 .walkinpopup .popup_img
 {
 	text-align: right;
+	float: right;
 }
 
 
