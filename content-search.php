@@ -27,7 +27,7 @@ if ( wp_get_attachment_url( $post->ID ) ) {
 						</a>	
 				</h2>
 			</header><!-- .entry-header -->
-			<?php if ( ! $attachment ) { ?>
+			<?php if ( $attachment ) { ?>
 			<section class="search-excerpt">
 				<p>
 					<?php echo $post->post_content; ?>
