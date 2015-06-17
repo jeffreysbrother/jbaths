@@ -368,6 +368,17 @@ th {
 	margin: -6px 20px -6px 0 !important;
 	background-image: url(images/icn-buy.png);
 }
+
+.vc_custom_1402555496172 .vc_button-2-wrapper
+{
+	display: block;
+}
+
+.site-content .vc_custom_1402555496172 .vc_btn_grey.vc_btn_outlined, .site-content .vc_custom_1402555496172 .vc_btn_grey.vc_btn_square_outlined
+{
+	margin: 0px;
+}
+
 /*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
