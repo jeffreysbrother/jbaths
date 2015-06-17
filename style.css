@@ -369,12 +369,13 @@ th {
 	background-image: url(images/icn-buy.png);
 }
 
-.vc_custom_1402555496172 .vc_button-2-wrapper
+.post-type-archive-bathtubs .vc_button-2-wrapper
 {
 	display: block;
+	width: 100%;
 }
 
-.site-content .vc_custom_1402555496172 .vc_btn_grey.vc_btn_outlined, .site-content .vc_custom_1402555496172 .vc_btn_grey.vc_btn_square_outlined
+.post-type-archive-bathtubs .vc_btn_grey.vc_btn_outlined, .post-type-archive-bathtubs .vc_btn_grey.vc_btn_square_outlined
 {
 	margin: 0px;
 	text-align: center;
