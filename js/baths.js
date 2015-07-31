@@ -481,7 +481,7 @@ jQuery(function($){
 		});
 	}
 	*/
-	
+
 	//home page style fix
 	if($('.slp_search_widget').width() < 360){
 		$('.slp_search_widget').addClass('skinny');
@@ -506,13 +506,10 @@ jQuery(function($){
 
 
 (function($){
-	$('ol#map_sidebar li.results_wrapper').hover(
-		function(){ //in
-			var imgUrl = $(this).find('.dealer-image span').attr('rel');
-			$(this).tooltip({ content: '<img src="' + imgUrl + '" />' });
-		}, function(){ //out
-
-		});
+	$('ol#map_sidebar li.results_wrapper').each(function(){
+		var imgUrl = $(this).find('.dealer-image span').attr('rel');
+		$(this).find('.results_entry').tooltip({ content: '<img src="' + imgUrl + '" />' });
+	});
 })(jQuery);
 
 /**
