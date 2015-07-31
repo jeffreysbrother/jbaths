@@ -505,6 +505,16 @@ jQuery(function($){
 });
 
 
+(function($){
+	$('ol#map_sidebar li.results_wrapper').hover(
+		function(){ //in
+			var imgUrl = $(this).find('.dealer-image span').attr('rel');
+			$(this).tooltip({ content: '<img src="' + imgUrl + '" />' });
+		}, function(){ //out
+
+		});
+})(jQuery);
+
 /**
  * Gravity Form styling fixes...
  * ...this mainly now needs CSS styling to complete
