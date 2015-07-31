@@ -171,21 +171,20 @@ div#sl_div div.col_r {
 		width: 100%;
 	}
 
-	div.results_entry div.hidden {
-		display: none;
-	}
-	div.results_entry:hover div.hidden {
-		display: block;
-	}
-
-	div.results_entry div.dealer-image img {
+	div.results_entry div.dealer-image {
 		height: 0;
-
-		-webkit-transition: height 1s;
-		transition: height 1s;
+		overflow: hidden;
+		padding-top: 10px
+		width: 100%;
+		-webkit-transition: height .2s;
+		transition: height .2s;
+	}
+	div.results_entry:hover div.dealer-image {
+		height: 210px;
 	}
 	div.results_entry:hover div.dealer-image img {
-		height: auto;
+		border: 1px solid #333;
+		height: 100%;
 	}
 
 
