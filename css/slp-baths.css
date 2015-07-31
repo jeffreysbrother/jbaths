@@ -172,6 +172,7 @@ div#sl_div div.col_r {
 	}
 
 	div.results_entry div.dealer-image {
+		min-height: 21px;
 		width: 100%;
 	}
 	div.results_entry div.dealer-image img {
