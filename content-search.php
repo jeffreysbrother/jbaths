@@ -27,8 +27,16 @@ if ( wp_get_attachment_url( $post->ID ) ) {
 						</a>	
 				</h2>
 			</header><!-- .entry-header -->
-
-			<?php if ( ! $attachment ) { ?>
+			<?php if ( $attachment ) { ?>
+			<section class="search-excerpt">
+				<p>
+					<?php echo $post->post_content; ?>
+				</p>
+				<!--p style="text-align: right;">
+					<a class="vc_btn vc_btn_grey vc_btn-grey vc_btn_md vc_btn-md vc_btn_square_outlined btn-search-more" href="<?php the_permalink(); ?>" title="" target="">LEARN MORE</a>
+				</p-->
+			</section>
+			<?php }  else { ?>
 			<section class="search-excerpt">
 				<p>
 					<?php the_excerpt(); ?>
