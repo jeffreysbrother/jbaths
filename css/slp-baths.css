@@ -171,6 +171,24 @@ div#sl_div div.col_r {
 		width: 100%;
 	}
 
+	div.results_entry div.hidden {
+		display: none;
+	}
+	div.results_entry:hover div.hidden {
+		display: block;
+	}
+
+	div.results_entry div.dealer-image img {
+		height: 0;
+
+		-webkit-transition: height 1s;
+		transition: height 1s;
+	}
+	div.results_entry:hover div.dealer-image img {
+		height: auto;
+	}
+
+
 	/* hide these parts in results ... */
 	div.results_entry span.slp_result_contact.slp_result_website { display: none; } /* website link */
 	div.results_entry span.slp_result_contact.slp_result_email { display: none; } /* email link */
