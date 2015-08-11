@@ -115,7 +115,7 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 function jbaths_post_orderer( $query ) {
-	if ( !empty($query->query['post_type']) && $query->query['post_type'] == 'bathtubs' ) {
+	if ( !empty($query->query['post_type']) && $query->query['post_type'] == 'bathtubs' && ! is_search() ) {
 		if ( '' == get_query_var( 'orderby' ) ) {
 			$query->set( 'orderby', 'title' );
 			$query->set( 'order', 'asc' );
