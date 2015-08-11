@@ -117,7 +117,7 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 function jbaths_post_orderer( $query ) {
-	if ( !empty($query->query['post_type']) && $query->query['post_type'] == 'bathtubs' ) {
+	if ( !empty($query->query['post_type']) && $query->query['post_type'] == 'bathtubs' && ! is_search() ) {
 		if ( '' == get_query_var( 'orderby' ) ) {
 			$query->set( 'orderby', 'title' );
 			$query->set( 'order', 'asc' );
@@ -621,9 +621,13 @@ function jbaths_postsperpage($limits) {
 
 function my_searchwp_query_orderby() {
 	global $wpdb;
-	return "ORDER BY {$wpdb->prefix}posts.post_type DESC, {$wpdb->prefix}posts.post_date DESC";
+	//return "ORDER BY {$wpdb->prefix}posts.post_type DESC, {$wpdb->prefix}posts.post_date DESC";
+	return "ORDER BY FIELD({$wpdb->prefix}posts.post_type, 'bathtubs', 'faucets', 'showers', 'toilets', 'posts', 'pages'), {$wpdb->prefix}posts.post_date DESC";
 }
 
 add_filter( 'searchwp_query_orderby', 'my_searchwp_query_orderby' );
 
 
+
+
+add_filter( 'searchwp_debug', '__return_true' );
