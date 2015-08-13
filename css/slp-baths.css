@@ -170,20 +170,43 @@ div#sl_div div.col_r {
 		display: block;
 		width: 100%;
 	}
-
-	div.results_entry div.dealer-image {
-		min-height: 21px;
-		width: 100%;
+	@media screen and (min-width: 1320px) {
+		div.results_entry div.dealer-image {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+		div.results_entry div.dealer-image img {
+			max-height: 130px;
+			max-width: 130px;
+		}
 	}
-	div.results_entry div.dealer-image img {
-		height: 0px;
-		opacity: 0;
-		-webkit-transition: height .05s, opacity .025s;
-		transition: height .05s, opacity .025s;
+	@media screen and (min-width: 1060px) and (max-width: 1319px) {
+		div.results_entry div.dealer-image {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+		div.results_entry div.dealer-image img {
+			max-height: 100px;
+			max-width: 100px;
+		}
 	}
-	div.results_entry:hover div.dealer-image img {
-		height: 210px;
-		opacity: 1;
+	@media screen and (min-width: 920px) and (max-width: 1059px) {
+		div.results_entry div.dealer-image img {
+			margin-top: 10px;
+		}
+	}
+	@media screen and (max-width: 919px) {
+		div.results_entry div.dealer-image {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+		div.results_entry div.dealer-image img {
+			max-height: 130px;
+			max-width: 130px;
+		}
 	}
 	div.results_entry:hover div.dealer-image img[src=""] {
 		display: none;
