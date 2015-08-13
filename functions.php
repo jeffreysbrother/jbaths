@@ -622,7 +622,8 @@ function jbaths_postsperpage($limits) {
 function my_searchwp_query_orderby() {
 	global $wpdb;
 	//return "ORDER BY {$wpdb->prefix}posts.post_type DESC, {$wpdb->prefix}posts.post_date DESC";
-	return "ORDER BY FIELD({$wpdb->prefix}posts.post_type, 'bathtubs', 'faucets', 'showers', 'toilets', 'post', 'page', 'attachment'), {$wpdb->prefix}posts.post_date DESC";
+	//return "ORDER BY FIELD({$wpdb->prefix}posts.post_type, 'bathtubs', 'faucets', 'showers', 'toilets', 'post', 'page', 'attachment'), {$wpdb->prefix}posts.post_date DESC";
+	return "ORDER BY FIELD({$wpdb->prefix}posts.post_type, 'bathtubs', 'faucets', 'showers', 'toilets', 'post', 'page', 'attachment'), finalweight, {$wpdb->prefix}posts.post_date DESC";
 }
 
 add_filter( 'searchwp_query_orderby', 'my_searchwp_query_orderby' );
