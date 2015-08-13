@@ -625,7 +625,4 @@ function my_searchwp_query_orderby() {
 
 add_filter( 'searchwp_query_orderby', 'my_searchwp_query_orderby' );
 
-
-
-
-add_filter( 'searchwp_debug', '__return_true' );
+//add_filter( 'searchwp_debug', '__return_true' );
