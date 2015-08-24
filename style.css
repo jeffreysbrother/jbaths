@@ -653,6 +653,7 @@ div.gform_footer input[type="submit"]:hover {
 	color: #fff;
 }
 div.gform_footer input#gform_submit_button_2 {
+	bottom: -28px;
 	margin-left: -119px;
 }
 
