@@ -481,7 +481,7 @@ jQuery(function($){
 		});
 	}
 	*/
-	
+
 	//home page style fix
 	if($('.slp_search_widget').width() < 360){
 		$('.slp_search_widget').addClass('skinny');

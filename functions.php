@@ -84,6 +84,8 @@ function jbaths_scripts() {
 		wp_register_script( 'jquery.cookie', get_stylesheet_directory_uri() .'/js/jquery.cookie.js', array('jquery'), $theme->Version );
 		wp_register_script( 'scrollupforwhat', get_stylesheet_directory_uri() .'/js/jquery.scrollupforwhat.min.js', array('jquery'), '1.2', true );
 		wp_register_script( 'matchHeight', get_template_directory_uri() . '/js/jquery.matchHeight.js', array('jquery'), '0.5.2', true );
+		//wp_register_script( 'jquery-ui', '//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js', array('jquery'), '1.11.4', true );
+		
 		
 		$jbaths_deps = array( 'jquery', 'jbaths.modernizr', 'jquery.cookie', 'scrollupforwhat', 'matchHeight' );
 		if ( is_singular( 'bathtubs' ) || is_singular( 'faucets' ) ) {
@@ -91,7 +93,7 @@ function jbaths_scripts() {
 				//$jbaths_deps[] = 'ultimate-row-bg';
 			}
 		}
-		wp_enqueue_script( 'jbaths', get_template_directory_uri() . '/js/baths.js', $jbaths_deps, '20140718', true );
+		wp_enqueue_script( 'jbaths', get_template_directory_uri() . '/js/baths.js', $jbaths_deps, '20150731', true );
 	}
 	wp_enqueue_script( 'skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 

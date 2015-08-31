@@ -120,7 +120,7 @@ div#sl_div div.col_r {
 		clear: both;
 		cursor: pointer;
 		margin-bottom: 0px;
-		padding: 20px 20px 20px 84px;
+		padding: 20px 20px 10px 84px;
 		position: relative;
 	}
 	li.results_wrapper:first-child {
@@ -170,6 +170,48 @@ div#sl_div div.col_r {
 		display: block;
 		width: 100%;
 	}
+	@media screen and (min-width: 1320px) {
+		div.results_entry div.dealer-image {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+		div.results_entry div.dealer-image img {
+			max-height: 130px;
+			max-width: 130px;
+		}
+	}
+	@media screen and (min-width: 1060px) and (max-width: 1319px) {
+		div.results_entry div.dealer-image {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+		div.results_entry div.dealer-image img {
+			max-height: 100px;
+			max-width: 100px;
+		}
+	}
+	@media screen and (min-width: 920px) and (max-width: 1059px) {
+		div.results_entry div.dealer-image img {
+			margin-top: 10px;
+		}
+	}
+	@media screen and (max-width: 919px) {
+		div.results_entry div.dealer-image {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+		div.results_entry div.dealer-image img {
+			max-height: 130px;
+			max-width: 130px;
+		}
+	}
+	div.results_entry:hover div.dealer-image img[src=""] {
+		display: none;
+	}
+
 
 	/* hide these parts in results ... */
 	div.results_entry span.slp_result_contact.slp_result_website { display: none; } /* website link */
