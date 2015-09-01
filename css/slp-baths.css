@@ -264,17 +264,19 @@ div#sl_div div.col_r {
 		width: 160px;
 	}
 	.baths-retailer.build_com { background-position: 17px 7px; }
-	.baths-retailer.atg_stores { background-position: -199px -3px; }
-	.baths-retailer.sdc { background-position: -397px 0px; }
+	.baths-retailer.ferguson { background-position: 17px 7px; }
 	.baths-retailer.efaucets { background-position: 11px -65px; }
 	.baths-retailer.home_stone { background-position: -197px -65px; }
+	.baths-retailer.lowes { background-position: -197px -133px; }
+	.baths-retailer.wayfair { background-position: -392px -199px; }
+
+	.baths-retailer.atg_stores { background-position: -199px -3px; }
+	.baths-retailer.sdc { background-position: -397px 0px; }
 	.baths-retailer.tubz_com { background-position: -378px -66px; }
 	.baths-retailer.faucet_com { background-position: 13px -134px; }
-	.baths-retailer.lowes { background-position: -197px -133px; }
 	.baths-retailer.tubz_more { background-position: -388px -137px; }
 	.baths-retailer.faucetdirect_com { background-position: 12px -203px; }
 	.baths-retailer.quality_bath { background-position: -195px -203px; }
-	.baths-retailer.wayfair { background-position: -392px -199px; }
 
 
 
