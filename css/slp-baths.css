@@ -264,11 +264,11 @@ div#sl_div div.col_r {
 		width: 160px;
 	}
 	.baths-retailer.build_com { background-position: 17px 7px; }
-	.baths-retailer.ferguson { background-position: 17px 7px; }
-	.baths-retailer.efaucets { background-position: 11px -65px; }
-	.baths-retailer.home_stone { background-position: -197px -65px; }
-	.baths-retailer.lowes { background-position: -197px -133px; }
-	.baths-retailer.wayfair { background-position: -392px -199px; }
+	.baths-retailer.ferguson { background-position: -203px 7px; }
+	.baths-retailer.efaucets { background-position: -390px 7px; }
+	.baths-retailer.home_stone { background-position: -12px -65px; }
+	.baths-retailer.lowes { background-position: -201px -70px; }
+	.baths-retailer.wayfair { background-position: -392px -70px; }
 
 	.baths-retailer.atg_stores { background-position: -199px -3px; }
 	.baths-retailer.sdc { background-position: -397px 0px; }
