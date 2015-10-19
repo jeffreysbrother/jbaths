@@ -26,33 +26,50 @@
 				closeBtn : false,
 				scrolling : 'no' });
 			
-			var bPageView = false,
-			    bSession = false,
-			    pageViews;
 			
-			//Session initiates if not already
-			if( !jQuery.cookie('currentSession', { path:'/' }) ){
-				bSession = true;
-				jQuery.cookie('currentSession', '1', { path:'/' });
-				jQuery.cookie('pageViews', '1', { path:'/', expires:365 })}
-			
-			pageViews = parseInt(jQuery.cookie('pageViews',{path:'/'}));					
-			if( pageViews > 4 && bSession == true){
-				doPop() }
-			else{
-				jQuery.cookie('pageViews', ++pageViews, { path:'/', expires:365 })}
+			var msLeft,
+			    pagesLeft,
+			    idleTimeoutID,
+			    now;
+			if( (jQuery.cookie('idlePopped') == "true" ) || ( jQuery('body').is('.page-brochure-request') ) ) return false;
 
-			function doPop(){
-				bPageView = true;
-				bSession = false; //while the corresponding cookie exists this will remain so
-				setTimeout(function(){
-					jQuery("#openBroPop").trigger('click') }, 3000) }
+			if(jQuery.cookie("idlePagesLeft") && jQuery.cookie("idleCountdown") && jQuery.cookie("idleStamp")) {
+			  //ilding has been previously underway
+				pagesLeft = jQuery.cookie("idlePagesLeft");
+				msLeft = jQuery.cookie("idleCountdown");
+				if(--pagesLeft < 1) idleTimeoutID = setTimeout(idlePopup, msLeft);
+				jQuery.cookie("idlePagesLeft",pagesLeft, {path: '/' });
+			} else {
+			  //initate idling
+				msLeft = 180000;
+				pagesLeft = 3;
+				now = new Date().getTime();
+				jQuery.cookie("idlePagesLeft",pagesLeft, {path: '/' });
+				jQuery.cookie("idleCountdown",msLeft, {path: '/' });
+				jQuery.cookie("idleStamp",now, {path: '/' });
+			}
 			
-			jQuery('.close_popup_link').on("click", function(e) {
-			    jQuery.fancybox.close(true) }) });
+			jQuery(window).unload(function() {
+				var now = new Date().getTime(),
+				    startStamp = jQuery.cookie("idleStamp"),
+				    msDiff = now - startStamp,
+				    msLeft = jQuery.cookie("idleCountdown");
+				clearTimeout(idleTimeoutID);
+				msLeft -= msDiff;
+				jQuery.cookie("idleCountdown",msLeft, {path: '/' });
+			});
+
+			function idlePopup() {	
+				jQuery.cookie("idlePagesLeft",null, {path: '/' });
+				jQuery.cookie("idleCountdown",null, {path: '/' });
+				jQuery.cookie("idleStamp",null, {path: '/' });
+				jQuery.cookie("idlePopped",true, {expires: 14, path: '/' });
+				jQuery('#openBroPop').trigger('click');
+				return false;
+			}});
 		
 	</script>
-	<div class="triggerlink" style="display:none !important"><a  href="#broPop" id="openBroPop"></a></div>
+	<div class="triggerlink" style="display:none !important"><a href="#broPop" id="openBroPop"></a></div>
 	<div id="broPop" class="broPop" style="display: none;">
 		<div class="wpb_row vc_row-fluid">
 			<div class="vc_span12 wpb_column">

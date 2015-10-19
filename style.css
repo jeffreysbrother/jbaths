@@ -1847,21 +1847,21 @@ h5 a:visited:hover {
 10.7 Collections & Walk-In page
 --------------------------------------------------------------*/
 
-/* Walk-In Popup */
-.walkinpopup
+
+.broPop
 {
 	background: #FFF;
 	height: 384px;	
 }
 
-.walkinpopup .close_popup
+.broPop .close_popup
 {
 	background: #006a85;
 	padding: 10px 25px;
 	text-align: right;
 }
 
-.walkinpopup .close_popup a
+.broPop .close_popup a
 {
 	font-size: 12px;
 	line-height: 15px;
@@ -1870,7 +1870,7 @@ h5 a:visited:hover {
 	font-family: "GSL";
 }
 
-.walkinpopup .popup_content
+.broPop .popup_content
 {
 	padding: 40px 20px;
 	text-align: center;
@@ -1879,14 +1879,14 @@ h5 a:visited:hover {
 }
 
 
-.walkinpopup .popup_img
+.broPop .popup_img
 {
 	text-align: right;
 	float: right;
 }
 
 
-.walkinpopup .popup_content h2
+.broPop .popup_content h2
 {
 	font-size: 24px;
 	line-height: 30px;
@@ -1896,7 +1896,7 @@ h5 a:visited:hover {
 	font-weight: 400;
 }
 
-.walkinpopup .popup_content p
+.broPop .popup_content p
 {
 	font-size: 14px;
 	line-height: 23px;
@@ -1931,13 +1931,13 @@ h5 a:visited:hover {
 
 
 @media screen and (max-width: 899px) {
-	.walkinpopup
+	.broPop
 	{
 		height: auto;
 	}
 	
 		
-	.walkinpopup .popup_img
+	.broPop .popup_img
 	{
 		text-align: center;
 	}
