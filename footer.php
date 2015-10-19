@@ -39,7 +39,7 @@
 			pageViews = parseInt(jQuery.cookie('pageViews'));					
 			if( ++pageViews > 4 && bSession == true){
 				doPop() }
-			else{;
+			else{
 				jQuery.cookie('pageViews', pageViews, { expires: 365 })}
 
 			function doPop(){
