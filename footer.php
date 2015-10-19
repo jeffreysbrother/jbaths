@@ -13,19 +13,6 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
-			jQuery("#openBroPop").fancybox({
-				maxWidth	: 900,
-				maxHeight	: 800,
-				fitToView	: false,
-				width		: '100%',
-				height		: 'auto',
-				autoSize	: false,
-				closeClick	: false,
-				openEffect	: 'none',
-				closeEffect	: 'none',
-				closeBtn : false,
-				scrolling : 'no' });
-			
 			
 			var msLeft,
 			    pagesLeft,
@@ -33,14 +20,14 @@
 			    now;
 			if( (jQuery.cookie('idlePopped') == "true" ) || ( jQuery('body').is('.page-brochure-request') ) ) return false;
 
-			if(jQuery.cookie("idlePagesLeft") && jQuery.cookie("idleCountdown") && jQuery.cookie("idleStamp")) {
-			  //ilding has been previously underway
+			if( jQuery.cookie("idlePagesLeft") && jQuery.cookie("idleCountdown") && jQuery.cookie("idleStamp")) {
+			    //ilding has been previously underway
 				pagesLeft = jQuery.cookie("idlePagesLeft");
 				msLeft = jQuery.cookie("idleCountdown");
 				if(--pagesLeft < 1) idleTimeoutID = setTimeout(idlePopup, msLeft);
-				jQuery.cookie("idlePagesLeft",pagesLeft, {path: '/' });
-			} else {
-			  //initate idling
+				jQuery.cookie("idlePagesLeft",pagesLeft, {path: '/' }) }
+			else {
+			    //initate idling
 				msLeft = 180000;
 				pagesLeft = 3;
 				now = new Date().getTime();
@@ -64,7 +51,21 @@
 				jQuery.cookie("idleCountdown",null, {path: '/' });
 				jQuery.cookie("idleStamp",null, {path: '/' });
 				jQuery.cookie("idlePopped",true, {expires: 14, path: '/' });
+				jQuery("#openBroPop").fancybox({
+					maxWidth	: 900,
+					maxHeight	: 800,
+					fitToView	: false,
+					width		: '100%',
+					height		: 'auto',
+					autoSize	: false,
+					closeClick	: false,
+					openEffect	: 'none',
+					closeEffect	: 'none',
+					closeBtn : false,
+					scrolling : 'no' });
 				jQuery('#openBroPop').trigger('click');
+				jQuery('.close_popup_link').on("click", function(e) {
+				    jQuery.fancybox.close(true) });
 				return false;
 			}});
 		
