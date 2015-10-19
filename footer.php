@@ -26,30 +26,27 @@
 				closeBtn : false,
 				scrolling : 'no' });
 			
-			//Cookie Logic
-			var openpopuppv = false;
-			var openpopupsess = false;
+			var bPageView = false,
+			    bSession = false,
+			    pageViews;
 			
-			//Session Logic
-			if(jQuery.cookie('currentsession')) {
-				openpopupsess = false }
-			else {
-				openpopupsess = true;
-				jQuery.cookie('currentsession', '1') }
-			//Page Views Logic
-			if(jQuery.cookie('totalViewsBroPop')) {
-				var totalviews = parseInt(jQuery.cookie('totalViewsBroPop'));					
-				if(totalviews > 4){
-					openpopuppv = true;
-					jQuery.cookie('totalViewsBroPop', '0', { expires: 365 }) }
-				else {
-					totalviews++;
-					jQuery.cookie('totalViewsBroPop', totalviews, { expires: 365 })}}
+			//Session initiates if not already
+			if( !jQuery.cookie('currentSession') ){
+				bSession = true;
+				jQuery.cookie('currentSession', '1');
+				jQuery.cookie('pageViews', '0', { expires:365 })}
 			
-			if(openpopupsess && openpopuppv) {
+			pageViews = parseInt(jQuery.cookie('pageViews'));					
+			if( ++pageViews > 4 && bSession == true){
+				doPop() }
+			else{;
+				jQuery.cookie('pageViews', pageViews, { expires: 365 })}
+
+			function doPop(){
+				bPageView = true;
+				bSession = false; //while the corresponding cookie exists this will remain so
 				setTimeout(function(){
 					jQuery("#openBroPop").trigger('click') }, 3000) }
-			
 			
 			jQuery('.close_popup_link').on("click", function(e) {
 			    jQuery.fancybox.close(true) }) });
