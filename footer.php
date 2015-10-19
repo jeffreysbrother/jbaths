@@ -31,12 +31,12 @@
 			    pageViews;
 			
 			//Session initiates if not already
-			if( !jQuery.cookie('currentSession') ){
+			if( !jQuery.cookie('currentSession', { path:'/' }) ){
 				bSession = true;
 				jQuery.cookie('currentSession', '1', { path:'/' });
 				jQuery.cookie('pageViews', '1', { path:'/', expires:365 })}
 			
-			pageViews = parseInt(jQuery.cookie('pageViews'));					
+			pageViews = parseInt(jQuery.cookie('pageViews',{path:'/'}));					
 			if( pageViews > 4 && bSession == true){
 				doPop() }
 			else{
