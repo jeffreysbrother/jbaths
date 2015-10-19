@@ -39,13 +39,12 @@
 			//Page Views Logic
 			if(jQuery.cookie('totalViewsBroPop')) {
 				var totalviews = parseInt(jQuery.cookie('totalViewsBroPop'));					
-				if(totalviews <= 5){
+				if(totalviews > 4){
 					openpopuppv = true;
-					totalviews += 1;
-					jQuery.cookie('totalViewsBroPop', totalviews, { expires: 365 }) }}
-			else {
-				openpopuppv = true;
-				jQuery.cookie('totalViewsBroPop', '1', { expires: 365 }) }
+					jQuery.cookie('totalViewsBroPop', '0', { expires: 365 }) }
+				else {
+					totalviews++;
+					jQuery.cookie('totalViewsBroPop', totalviews, { expires: 365 })}}
 			
 			if(openpopupsess && openpopuppv) {
 				setTimeout(function(){
