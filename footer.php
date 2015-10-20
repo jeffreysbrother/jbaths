@@ -26,15 +26,14 @@
 				msLeft = jQuery.cookie("idleCountdown");
 				if(--pagesLeft < 1) idleTimeoutID = setTimeout(idlePopup, msLeft);
 				jQuery.cookie("idlePagesLeft",pagesLeft, {path: '/' }) }
-			else {
+			else{
 			    //initate idling
 				msLeft = 180000;
 				pagesLeft = 3;
 				now = new Date().getTime();
 				jQuery.cookie("idlePagesLeft",pagesLeft, {path: '/' });
 				jQuery.cookie("idleCountdown",msLeft, {path: '/' });
-				jQuery.cookie("idleStamp",now, {path: '/' });
-			}
+				jQuery.cookie("idleStamp",now, {path: '/' }); }
 			
 			jQuery(window).unload(function() {
 				var now = new Date().getTime(),
@@ -70,7 +69,7 @@
 			}});
 		
 	</script>
-	<div class="triggerlink" style="display:none !important"><a href="#broPop" id="openBroPop"></a></div>
+	<div class="triggerlink" style="display:none !important"><a href="#broPop" id="openBroPop" accesskey="P"></a></div>
 	<div id="broPop" class="broPop" style="display: none;">
 		<div class="wpb_row vc_row-fluid">
 			<div class="vc_span12 wpb_column">
