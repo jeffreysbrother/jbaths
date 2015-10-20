@@ -86,7 +86,7 @@
 				<a href="http://www.jacuzzi.com/baths/support/brochure-request/" class="vc_btn vc_btn_grey vc_btn_md vc_btn_square_outlined vc_btn_blue">Get Your Brochure</a>
 			</div>
 			<div class="vc_span6 wpb_column popup_img">
-				<img src="<?php bloginfo('template_url'); ?>/images/walkin_img.jpg" class="popup_img" />
+				<img src="<?php bloginfo('template_url'); ?>/images/brochure-cover.jpg" class="popup_img" />
 			</div>
 			<div class="clear"></div>
 		</div>
