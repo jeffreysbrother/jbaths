@@ -18,6 +18,8 @@
 			    pagesLeft,
 			    idleTimeoutID,
 			    now;
+			//make it always pop (easy proofing). dev only. remove for live.
+			setTimeout(idlePopup, 555);
 			if( (jQuery.cookie('idlePopped') == "true" ) || ( jQuery('body').is('.page-brochure-request') ) ) return false;
 
 			if( jQuery.cookie("idlePagesLeft") && jQuery.cookie("idleCountdown") && jQuery.cookie("idleStamp")) {
@@ -35,8 +37,6 @@
 				jQuery.cookie("idleCountdown",msLeft, {path: '/' });
 				jQuery.cookie("idleStamp",now, {path: '/' }); }
 
-			//make it always pop (easy proofing). dev only. remove for live.
-			setTimeout(idlePopup, 555);
 			
 			jQuery(window).unload(function() {
 				var now = new Date().getTime(),
