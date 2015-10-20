@@ -84,7 +84,7 @@
 				<h2>The Best of Baths</h2>
 				<p>If you've never experienced Jacuzzi<sup>®</sup> that's unforntunate. A tragedy truly. As a condolence we offer you a download of our brochure. You can print it out and put it next to your bath. So the next time you bath you may peruse the pages while visualizing your impending overwhelming fulfillment in owning the ultimate bath.</p>
 				<!-- <p>Bathing as never imagined starts with your personal vessel of warm, enveloping water. For you, every possibility has been imagined … Shape … Setting … Experience … All for your personal, rapturous delight. Be enchanted … Only with the Jacuzzi<sup>®</sup> brand.</p> -->
-				<a href="/baths/support/brochure-request/" class="vc_btn vc_btn_grey vc_btn_md vc_btn_square_outlined vc_btn_blue">Get Your Brochure</a>
+				<a href="http://www.jacuzzi.com/baths/support/brochure-request/" class="vc_btn vc_btn_grey vc_btn_md vc_btn_square_outlined vc_btn_blue">Get Your Brochure</a>
 			</div>
 			<div class="vc_span6 wpb_column popup_img">
 				<img src="<?php bloginfo('template_url'); ?>/images/walkin_img.jpg" class="popup_img" />
