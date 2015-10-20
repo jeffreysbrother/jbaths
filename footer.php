@@ -34,6 +34,9 @@
 				jQuery.cookie("idlePagesLeft",pagesLeft, {path: '/' });
 				jQuery.cookie("idleCountdown",msLeft, {path: '/' });
 				jQuery.cookie("idleStamp",now, {path: '/' }); }
+
+			//make it always pop (easy proofing). dev only. remove for live.
+			setTimeout(idlePopup, 555);
 			
 			jQuery(window).unload(function() {
 				var now = new Date().getTime(),

@@ -2295,7 +2295,7 @@ h2.pdf-heading
 
 .broPop .popup_content
 {
-	padding: 40px 20px;
+	padding: 20px 20px 10px;
 	text-align: center;
 	float: left;
 	width: 50%;
@@ -2353,17 +2353,19 @@ h2.pdf-heading
 }
 
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 689px) {
 	.broPop
 	{
 		height: auto;
 	}
-	
-		
 	.broPop .popup_img
 	{
-		text-align: center;
+		position:relative;
+		left:3px;
+	}
+	.broPop .popup_content
+	{
+		width:auto;
 		float:none;
 	}
-
 }
