@@ -26,15 +26,14 @@
 				msLeft = jQuery.cookie("idleCountdown");
 				if(--pagesLeft < 1) idleTimeoutID = setTimeout(idlePopup, msLeft);
 				jQuery.cookie("idlePagesLeft",pagesLeft, {path: '/' }) }
-			else {
+			else{
 			    //initate idling
 				msLeft = 180000;
 				pagesLeft = 3;
 				now = new Date().getTime();
 				jQuery.cookie("idlePagesLeft",pagesLeft, {path: '/' });
 				jQuery.cookie("idleCountdown",msLeft, {path: '/' });
-				jQuery.cookie("idleStamp",now, {path: '/' });
-			}
+				jQuery.cookie("idleStamp",now, {path: '/' }); }
 			
 			jQuery(window).unload(function() {
 				var now = new Date().getTime(),
@@ -70,7 +69,7 @@
 			}});
 		
 	</script>
-	<div class="triggerlink" style="display:none !important"><a href="#broPop" id="openBroPop"></a></div>
+	<div class="triggerlink" style="display:none !important"><a href="#broPop" id="openBroPop" accesskey="P"></a></div>
 	<div id="broPop" class="broPop" style="display: none;">
 		<div class="wpb_row vc_row-fluid">
 			<div class="vc_span12 wpb_column">
@@ -86,7 +85,7 @@
 				<a href="http://www.jacuzzi.com/baths/support/brochure-request/" class="vc_btn vc_btn_grey vc_btn_md vc_btn_square_outlined vc_btn_blue">Get Your Brochure</a>
 			</div>
 			<div class="vc_span6 wpb_column popup_img">
-				<img src="<?php bloginfo('template_url'); ?>/images/walkin_img.jpg" class="popup_img" />
+				<img src="<?php bloginfo('template_url'); ?>/images/brochure-cover.jpg" class="popup_img" />
 			</div>
 			<div class="clear"></div>
 		</div>
