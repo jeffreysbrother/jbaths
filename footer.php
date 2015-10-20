@@ -51,8 +51,8 @@
 				jQuery.cookie("idleStamp",null, {path: '/' });
 				jQuery.cookie("idlePopped",true, {expires: 14, path: '/' });
 				jQuery("#openBroPop").fancybox({
-					maxWidth	: 900,
-					maxHeight	: 800,
+					maxWidth	: 660,
+					maxHeight	: 660,
 					fitToView	: false,
 					width		: '100%',
 					height		: 'auto',
