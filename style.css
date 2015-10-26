@@ -2295,10 +2295,11 @@ h2.pdf-heading
 
 .broPop .popup_content
 {
-	padding: 20px 20px 10px;
-	text-align: center;
+	position:relative;
+	padding: 20px 20px 10px 40px;
 	float: left;
-	width: 50%;
+	width: 51%;
+	z-index:100;
 }
 
 
@@ -2306,6 +2307,7 @@ h2.pdf-heading
 {
 	text-align: center;
 	float:none;
+	z-index:0;
 }
 
 
@@ -2319,9 +2321,9 @@ h2.pdf-heading
 	font-weight: 400;
 }
 
-.broPop .popup_content p
+.broPop .popup_content ul
 {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 23px;
 	color: #000000;
 	margin-bottom: 15px;
