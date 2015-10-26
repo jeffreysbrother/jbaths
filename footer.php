@@ -18,8 +18,7 @@
 			    pagesLeft,
 			    idleTimeoutID,
 			    now;
-			//make it always pop (easy proofing). dev only. remove for live.
-			setTimeout(idlePopup, 555);
+
 			if( (jQuery.cookie('idlePopped') == "true" ) || ( jQuery('body').is('.page-brochure-request') ) ) return false;
 
 			if( jQuery.cookie("idlePagesLeft") && jQuery.cookie("idleCountdown") && jQuery.cookie("idleStamp")) {
@@ -29,9 +28,9 @@
 				if(--pagesLeft < 1) idleTimeoutID = setTimeout(idlePopup, msLeft);
 				jQuery.cookie("idlePagesLeft",pagesLeft, {path: '/' }) }
 			else{
-			    //initate idling
-				msLeft = 180000;
-				pagesLeft = 3;
+			    //initate idling. config vars here...
+				msLeft = 180000; // total time in milliseconds before the popup will trigger
+				pagesLeft = 3; // number of pages the visitor sees before the popup will trigger
 				now = new Date().getTime();
 				jQuery.cookie("idlePagesLeft",pagesLeft, {path: '/' });
 				jQuery.cookie("idleCountdown",msLeft, {path: '/' });
@@ -83,8 +82,12 @@
 		<div class="clear"></div>		
 		<div class="wpb_row vc_row-fluid">
 			<div class="vc_span6 wpb_column popup_content">
-				<h2>The Best of Baths</h2>
-				<p>Bathing as never imagined starts with your personal vessel of warm, enveloping water. For you, every possibility has been imagined … Shape … Setting … Experience … All for your personal, rapturous delight. Be enchanted … Only with the Jacuzzi<sup>®</sup> brand.</p>
+				<h2>Discover why a Jacuzzi<sup>®</sup> Bathtub is the right choice</h2>
+				<ul>
+					<li>See inside the structure of a Jacuzzi<sup>®</sup> Bathtub</li>
+					<li>Compare features across models</li>
+					<li>Explore inspirational photos</li>
+				</ul>
 				<a href="http://www.jacuzzi.com/baths/support/brochure-request/" class="vc_btn vc_btn_grey vc_btn_md vc_btn_square_outlined vc_btn_blue">Get Your Brochure</a>
 			</div>
 			<div class="vc_span6 wpb_column popup_img">
