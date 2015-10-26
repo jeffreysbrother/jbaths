@@ -82,7 +82,7 @@
 		<div class="clear"></div>		
 		<div class="wpb_row vc_row-fluid">
 			<div class="vc_span6 wpb_column popup_content">
-				<h2>Discover why a Jacuzzi<sup>®</sup> Bathtub is the right choice</h2>
+				<h2>Discover why a Jacuzzi<sup>®</sup>&nbsp;Bathtub is the right choice</h2>
 				<ul>
 					<li>See inside the structure of a Jacuzzi<sup>®</sup>&nbsp;Bathtub</li>
 					<li>Compare features across models</li>
