@@ -631,12 +631,12 @@ li.gform_validation_container {
 div.gform_footer {
 	border-bottom: 2px solid #e1e1e1;
 }
-div.gform_footer input[type="submit"] {
+div.gform_footer input[type="submit"], .green-btn {
 	border: 2px solid #e1e1e1;
 	border-radius: 0;
 	bottom: -19px;
 	box-shadow: none;
-	background-color: #666;
+	background-color: #7FBCAA;
 	color: #fff;
 	font-family: "GSMT";
 	left: 50%;
@@ -648,8 +648,8 @@ div.gform_footer input[type="submit"] {
 
 	transition: background-color 0.25s ease;
 }
-div.gform_footer input[type="submit"]:hover {
-	background-color: #333;
+div.gform_footer input[type="submit"]:hover, .green-btn:hover {
+	background-color: #416158;
 	color: #fff;
 }
 div.gform_footer input#gform_submit_button_2 {
@@ -953,7 +953,7 @@ body.touch .main-navigation ul li.open > ul {
 		max-width: 92.5%;
 		padding-right: 10px;
 		position: absolute;
-		top: 705px;
+		top: 854px;
 		width: calc(100% - 30px) !important;
 		z-index: 99999;
 	}
@@ -1508,6 +1508,17 @@ div.rev_slider_wrapper div.rev_slider ul div.tp-caption {
 }
 .vc_responsive .site-content .baths-filters .wpb_row .vc_span2.fcol-collection {
 	width: 24%;
+}
+@media screen and (max-width: 767px) {
+	.vc_responsive .site-content .baths-filters .wpb_row .vc_span2,
+	.vc_responsive .site-content .baths-filters .wpb_row .vc_span2.fcol-collection {
+		float: left;
+		width: 100%;
+	}
+	.baths-filters select {
+		width: auto;
+		max-width: 100%;
+	}
 }
 .vc_responsive .site-content .baths-filters .wpb_text_column {
 	padding: 0 20px 0 41px;
