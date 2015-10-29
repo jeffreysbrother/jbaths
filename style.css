@@ -1509,6 +1509,17 @@ div.rev_slider_wrapper div.rev_slider ul div.tp-caption {
 .vc_responsive .site-content .baths-filters .wpb_row .vc_span2.fcol-collection {
 	width: 24%;
 }
+@media screen and (max-width: 767px) {
+	.vc_responsive .site-content .baths-filters .wpb_row .vc_span2,
+	.vc_responsive .site-content .baths-filters .wpb_row .vc_span2.fcol-collection {
+		float: left;
+		width: 100%;
+	}
+	.baths-filters select {
+		width: auto;
+		max-width: 100%;
+	}
+}
 .vc_responsive .site-content .baths-filters .wpb_text_column {
 	padding: 0 20px 0 41px;
 }
