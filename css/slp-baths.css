@@ -332,3 +332,29 @@ div#sl_div div.col_r {
 		cursor: pointer;
 	}
 }
+
+@media screen and (min-width: 1072px) {
+	div.results_entry span.location_name {
+	    font-weight: bold;
+	    max-width: 250px;
+	    margin-bottom: 10px;
+	}
+}	
+
+
+@media screen and (max-width: 1071px) {
+	div.results_entry div.dealer-image {
+	    position: inherit;
+	    right: 0px;
+	    top: 0px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    display: block;
+	    margin-top: 20px;
+	}
+	
+	.entry-header .title, .entry-header h1.title, .entry-header h1.entry-title
+	{
+		padding: 0.35em 15px;
+	}
+}
