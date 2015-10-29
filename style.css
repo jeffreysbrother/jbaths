@@ -631,7 +631,7 @@ li.gform_validation_container {
 div.gform_footer {
 	border-bottom: 2px solid #e1e1e1;
 }
-div.gform_footer input[type="submit"] {
+div.gform_footer input[type="submit"], .green-btn {
 	border: 2px solid #e1e1e1;
 	border-radius: 0;
 	bottom: -19px;
@@ -648,7 +648,7 @@ div.gform_footer input[type="submit"] {
 
 	transition: background-color 0.25s ease;
 }
-div.gform_footer input[type="submit"]:hover {
+div.gform_footer input[type="submit"]:hover, .green-btn:hover {
 	background-color: #416158;
 	color: #fff;
 }
