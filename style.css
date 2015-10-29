@@ -661,6 +661,9 @@ div.gform_footer input#gform_submit_button_2 {
 /*--------------------------------------------------------------
 5.0 Navigation
 --------------------------------------------------------------*/
+#site-navigation {
+	z-index: 999;
+}
 .site-header {
 	background: #262626;
 	padding: 12px 10px 18px 20px;
