@@ -661,6 +661,9 @@ div.gform_footer input#gform_submit_button_2 {
 /*--------------------------------------------------------------
 5.0 Navigation
 --------------------------------------------------------------*/
+#site-navigation {
+	z-index: 999;
+}
 .site-header {
 	background: #262626;
 	padding: 12px 10px 18px 20px;
@@ -2279,6 +2282,7 @@ h2.pdf-heading
 	display: inline-block;	
 }
 
+<<<<<<< HEAD
 /*--------------------------------------------------------------
 13.0 Popups
 --------------------------------------------------------------*/
@@ -2382,3 +2386,12 @@ h2.pdf-heading
 		float:none;
 	}
 }
+=======
+@media screen and (max-width: 767px) {
+	.entry-header .title, .entry-header h1.title, .entry-header h1.entry-title
+	{
+		padding: 0.35em 20px;
+	}
+}
+
+>>>>>>> JAC-1066
