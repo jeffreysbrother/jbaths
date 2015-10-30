@@ -2282,7 +2282,6 @@ h2.pdf-heading
 	display: inline-block;	
 }
 
-<<<<<<< HEAD
 /*--------------------------------------------------------------
 13.0 Popups
 --------------------------------------------------------------*/
@@ -2386,7 +2385,7 @@ h2.pdf-heading
 		float:none;
 	}
 }
-=======
+
 @media screen and (max-width: 767px) {
 	.entry-header .title, .entry-header h1.title, .entry-header h1.entry-title
 	{
@@ -2394,4 +2393,3 @@ h2.pdf-heading
 	}
 }
 
->>>>>>> JAC-1066
