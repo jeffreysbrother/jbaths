@@ -629,14 +629,14 @@ li.gform_validation_container {
 	display: none;
 }
 div.gform_footer {
-	border-bottom: 2px solid #e1e1e1;
+	xborder-bottom: 2px solid #e1e1e1;
 }
 div.gform_footer input[type="submit"], .green-btn {
 	border: 2px solid #e1e1e1;
 	border-radius: 0;
 	bottom: -19px;
 	box-shadow: none;
-	background-color: #7FBCAA;
+	background-color: #00667F;
 	color: #fff;
 	font-family: "GSMT";
 	left: 50%;
@@ -649,7 +649,7 @@ div.gform_footer input[type="submit"], .green-btn {
 	transition: background-color 0.25s ease;
 }
 div.gform_footer input[type="submit"]:hover, .green-btn:hover {
-	background-color: #416158;
+	background-color: #014859;
 	color: #fff;
 }
 div.gform_footer input#gform_submit_button_2 {
