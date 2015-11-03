@@ -121,46 +121,17 @@ if(is_page( 'walk-in' ))
 												closeBtn : false,
 												scrolling : 'no'
 											});
-			
-			//Cookie Logic
-			var openpopuppv,
-				openpopupsess,
-				totalviews;
+
+			var	openpopupsess;
 			
 			//Session Logic
 			if(!jQuery.cookie('currentsession'))
 			{
-				openpopupsess = true;
 				jQuery.cookie('currentsession', '1');
-			}
-			//Page Views Logic
-			if(jQuery.cookie('totalwalkin'))
-			{
-				totalviews = parseInt(jQuery.cookie('totalwalkin'));
-				
-				if(totalviews <= 5)
-				{
-					openpopuppv = false;
-					totalviews += 1;
-					jQuery.cookie('totalwalkin', totalviews, { expires: 365 });
-				}
-				else
-				{
-					openpopuppv = true;
-				}
-			}
-			else
-			{
-				jQuery.cookie('totalwalkin', '1', { expires: 365 });
-			}
-			
-			if(openpopupsess && openpopuppv)
-			{
 				setTimeout(function(){
 					jQuery("#openwalkinpopup").trigger('click');
-				}, 3000);	
+				}, 3000);
 			}
-			
 			
 			jQuery('.close_popup_link').on("click", function(e) {
 			    jQuery.fancybox.close(true);
