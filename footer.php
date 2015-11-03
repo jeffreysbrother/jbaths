@@ -79,7 +79,7 @@
 		
 	</script>
 	<div class="triggerlink" style="display:none !important"><a href="#broPop" id="openBroPop" accesskey="P"></a></div>
-	<div id="broPop" class="broPop" style="display: none;">
+	<div id="broPop" class="aPop" style="display: none;">
 		<div class="wpb_row vc_row-fluid">
 			<div class="vc_span12 wpb_column">
 				<div class="close_popup"><a href="#" class="close_popup_link">CLOSE X</a></div>
