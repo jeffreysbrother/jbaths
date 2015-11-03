@@ -184,11 +184,8 @@
 					<div class="clear"></div>		
 					<div class="wpb_row vc_row-fluid">
 						<div class="vc_span6 wpb_column popup_content">
-							<h2>WALK-IN TUBS<br/>
-								FOR EXISTING HOMES</h2>
-							<p>The safer, more luxurious alternative to a<br/>
-								 traditional bath. Made to fit your existing bath<br/>
-								  space without any major remodeling required.</p>
+							<h2>WALK-IN TUBS<br/>FOR EXISTING HOMES</h2>
+							<p>The safer, more luxurious alternative to a traditional bath. Made to fit your existing bath space without any major remodeling required.</p>
 							<p>Limited Lifetime Warranty</p>
 							<a href="http://www.hydrotherapybathing.com/about-walk-in-tubs/" class="vc_btn vc_btn_grey vc_btn_md vc_btn_square_outlined vc_btn_blue">LEARN MORE</a>
 						</div>
