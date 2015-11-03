@@ -127,11 +127,7 @@ if(is_page( 'walk-in' ))
 			var openpopupsess = false;
 			
 			//Session Logic
-			if(jQuery.cookie('currentsession'))
-			{
-				openpopupsess = false;
-			}
-			else
+			if(!jQuery.cookie('currentsession'))
 			{
 				openpopupsess = true;
 				jQuery.cookie('currentsession', '1');
@@ -143,14 +139,17 @@ if(is_page( 'walk-in' ))
 				
 				if(totalviews <= 5)
 				{
-					openpopuppv = true;
+					openpopuppv = false;
 					totalviews += 1;
 					jQuery.cookie('totalwalkin', totalviews, { expires: 365 });
+				}
+				else
+				{
+					openpopuppv = true;
 				}
 			}
 			else
 			{
-				openpopuppv = true;
 				jQuery.cookie('totalwalkin', '1', { expires: 365 });
 			}
 			
