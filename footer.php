@@ -171,7 +171,6 @@
 						});
 
 					});
-					
 				</script>
 				<div class="triggerlink" style="display:none !important"><a  href="#walkinpopup" id="openwalkinpopup"></a></div>
 				<div id="walkinpopup" class="aPop" style="display: none;">

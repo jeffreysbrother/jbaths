@@ -1868,22 +1868,6 @@ h5 a:visited:hover {
 #walkinpopup .popup_content
 {
 	padding: 40px 20px;
-	text-align: center;
-	float: left;
-	width: 50%;
-}
-#walkinpopup .popup_img
-{
-	text-align: right;
-	float: right;
-	width:48%;
-
-}
-#walkinpopup .popup_img img
-{
-	text-align: right;
-	float: right;
-	width:auto;
 }
 
 #walkinpopup .popup_content h2
@@ -1900,7 +1884,7 @@ h5 a:visited:hover {
 	}
 
 }
-	
+
 @media screen and (max-width: 768px) {
   .collection-row .wpb_single_image.vc_align_right {
     text-align:left;
@@ -2464,8 +2448,6 @@ h2.pdf-heading
 	width: 51%;
 	z-index:100;
 }
-
-
 .aPop .popup_img
 {
 	text-align: center;
@@ -2556,7 +2538,6 @@ h2.pdf-heading
 	}
 	.aPop .popup_img img{
 		width:100%;
-
 	}
 	/* Brochure pop-up specific styles */
 	#broPop .popup_img
