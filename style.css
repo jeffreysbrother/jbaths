@@ -1865,22 +1865,28 @@ h5 a:visited:hover {
 --------------------------------------------------------------*/
 
 /* Walk-In Popup */
-#walkinpopup .popup_content
-{
-	padding: 40px 20px;
-}
-
 #walkinpopup .popup_content h2
 {
 	font-size: 24px;
 	line-height: 30px;
 }
-
+#walkinpopup .popup_content p
+{
+	margin-bottom:1em;
+}
+#walkinpopup .popup_img{
+	text-align:right;
+}
+#walkinpopup .popup_img img{
+	width:49%;
+}
 @media screen and (max-width: 589px) {
 		
-	#walkinpopup .popup_img
-	{
+	#walkinpopup .popup_img	{
 		text-align: center;
+	}
+	#walkinpopup .popup_img img{
+		width:auto;
 	}
 
 }
@@ -2421,7 +2427,6 @@ h2.pdf-heading
 .aPop
 {
 	background: #FFF;
-	height: 384px;	
 }
 
 .aPop .close_popup
@@ -2439,7 +2444,9 @@ h2.pdf-heading
 	text-decoration: none;
 	font-family: "GSL";
 }
-
+.aPop .wpb_row.vc_row-fluid{
+	overflow: auto;
+}
 .aPop .popup_content
 {
 	position:relative;
@@ -2454,8 +2461,6 @@ h2.pdf-heading
 	float:none;
 	z-index:0;
 }
-
-
 .aPop .popup_content h2
 {
 	font-size: 20px;
@@ -2466,7 +2471,6 @@ h2.pdf-heading
 	font-weight: 400;
 	text-transform:uppercase
 }
-
 .aPop .popup_content ul
 {
 	font-size: 16px;
@@ -2475,8 +2479,6 @@ h2.pdf-heading
 	font-family: "Helvetica Neue";
 	font-weight: 300;
 }
-
-
 .aPop .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue
 {
 	margin-top:12px;
