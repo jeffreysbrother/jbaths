@@ -1864,9 +1864,6 @@ h5 a:visited:hover {
 10.7 Collections & Walk-In page
 --------------------------------------------------------------*/
 
-
-
-	
 @media screen and (max-width: 768px) {
   .collection-row .wpb_single_image.vc_align_right {
     text-align:left;
@@ -2400,20 +2397,20 @@ h2.pdf-heading
 /*--------------------------------------------------------------
 13.0 Popups
 --------------------------------------------------------------*/
-.broPop
+.aPop
 {
 	background: #FFF;
 	height: 384px;	
 }
 
-.broPop .close_popup
+.aPop .close_popup
 {
 	background: #006a85;
 	padding: 10px 25px;
 	text-align: right;
 }
 
-.broPop .close_popup a
+.aPop .close_popup a
 {
 	font-size: 12px;
 	line-height: 15px;
@@ -2422,7 +2419,7 @@ h2.pdf-heading
 	font-family: "GSL";
 }
 
-.broPop .popup_content
+.aPop .popup_content
 {
 	position:relative;
 	padding: 20px 20px 10px 40px;
@@ -2432,19 +2429,19 @@ h2.pdf-heading
 }
 
 
-.broPop .popup_img
+.aPop .popup_img
 {
 	text-align: center;
 	float:none;
 	z-index:0;
 }
-.broPop .popup_img img{
+.aPop .popup_img img{
 	width:48%;
 	max-width:317px;
 }
 
 
-.broPop .popup_content h2
+.aPop .popup_content h2
 {
 	font-size: 20px;
 	line-height: 1.4;
@@ -2455,7 +2452,7 @@ h2.pdf-heading
 	text-transform:uppercase
 }
 
-.broPop .popup_content ul
+.aPop .popup_content ul
 {
 	font-size: 16px;
 	line-height: 23px;
@@ -2465,13 +2462,13 @@ h2.pdf-heading
 }
 
 
-.broPop .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue
+.aPop .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue
 {
 	margin-top:12px;
 	color: #006a85 !important;
 	border-color: #006a85 !important;
 }
-.broPop .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue:hover{
+.aPop .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue:hover{
 	background-color:#006a85 !important;
 	color:#fff !important;
 }
@@ -2499,31 +2496,31 @@ h2.pdf-heading
 	.fancybox-inner{
 		width:300px !important;
 	}
-	.broPop
+	.aPop
 	{
 		height: auto;
 	}
-	.broPop .popup_content
+	.aPop .popup_content
 	{
 		width:auto;
 		float:none;
 		padding-left:30px;
 		text-align:center;
 	}
-	.broPop .popup_content h2,
-	.broPop .popup_content ul{
+	.aPop .popup_content h2,
+	.aPop .popup_content ul{
 		text-align:left;
 	}
-	.broPop .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue
+	.aPop .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue
 	{
 		text-align:center; 
 	}
-	.broPop .popup_img
+	.aPop .popup_img
 	{
 		position:relative;
 		left:3px;
 	}
-	.broPop .popup_img img{
+	.aPop .popup_img img{
 		width:100%;
 
 	}
