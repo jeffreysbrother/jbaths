@@ -2461,6 +2461,10 @@ h2.pdf-heading
 	float:none;
 	z-index:0;
 }
+.aPop .popup_img img
+{
+	display: block;
+}
 .aPop .popup_content h2
 {
 	font-size: 20px;
@@ -2526,7 +2530,7 @@ h2.pdf-heading
 	}
 	.aPop .popup_content h2,
 	.aPop .popup_content ul,
-	.aPop .popup_content p,
+	.aPop .popup_content p
 	{
 		text-align:left;
 	}
@@ -2535,7 +2539,7 @@ h2.pdf-heading
 		text-align:center; 
 	}
 	.aPop .popup_img img{
-		width:100%;
+		width:auto !important;
 	}
 	/* Brochure pop-up specific styles */
 	#broPop .popup_img
