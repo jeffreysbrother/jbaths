@@ -80,7 +80,7 @@
 					
 				</script>
 				<div class="triggerlink" style="display:none !important"><a  href="#walkinpopup" id="openwalkinpopup"></a></div>
-				<div id="walkinpopup" class="walkinpopup" style="display: none;">
+				<div id="walkinpopup" class="aPop" style="display: none;">
 					<div class="wpb_row vc_row-fluid">
 						<div class="vc_span12 wpb_column">
 							<div class="close_popup"><a href="#" class="close_popup_link">CLOSE X</a></div>
