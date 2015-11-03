@@ -19,13 +19,7 @@
 			    idleTimeoutID,
 			    now;
 
-			if(	jQuery.cookie('idlePopped') == "true" ||
-				body.is('.page-brochure-request') ||
-				body.is('.page-information') ||
-				body.is('.page-warranty-registration') ||
-				body.is('.page-walk-in')
-			  ) { return false } //early return skips everything below
-
+			if( (jQuery.cookie('idlePopped') == "true" ) || ( jQuery('body').is('.page-brochure-request') ) ) return false;
 
 			if( jQuery.cookie("idlePagesLeft") && jQuery.cookie("idleCountdown") && jQuery.cookie("idleStamp")) {
 			    //ilding has been previously underway
