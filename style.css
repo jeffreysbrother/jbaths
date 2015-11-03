@@ -1864,6 +1864,43 @@ h5 a:visited:hover {
 10.7 Collections & Walk-In page
 --------------------------------------------------------------*/
 
+/* Walk-In Popup */
+#walkinpopup .popup_content
+{
+	padding: 40px 20px;
+	text-align: center;
+	float: left;
+	width: 50%;
+}
+#walkinpopup .popup_img
+{
+	text-align: right;
+	float: right;
+	width:48%;
+
+}
+#walkinpopup .popup_img img
+{
+	text-align: right;
+	float: right;
+	width:auto;
+}
+
+#walkinpopup .popup_content h2
+{
+	font-size: 24px;
+	line-height: 30px;
+}
+
+@media screen and (max-width: 589px) {
+		
+	#walkinpopup .popup_img
+	{
+		text-align: center;
+	}
+
+}
+
 @media screen and (max-width: 768px) {
   .collection-row .wpb_single_image.vc_align_right {
     text-align:left;
