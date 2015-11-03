@@ -123,8 +123,9 @@ if(is_page( 'walk-in' ))
 											});
 			
 			//Cookie Logic
-			var openpopuppv = false;
-			var openpopupsess = false;
+			var openpopuppv,
+				openpopupsess,
+				totalviews;
 			
 			//Session Logic
 			if(!jQuery.cookie('currentsession'))
@@ -135,7 +136,7 @@ if(is_page( 'walk-in' ))
 			//Page Views Logic
 			if(jQuery.cookie('totalwalkin'))
 			{
-				var totalviews = parseInt(jQuery.cookie('totalwalkin'));
+				totalviews = parseInt(jQuery.cookie('totalwalkin'));
 				
 				if(totalviews <= 5)
 				{
