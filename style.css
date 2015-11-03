@@ -2350,10 +2350,6 @@ h2.pdf-heading
 	float:none;
 	z-index:0;
 }
-.aPop .popup_img img{
-	width:48%;
-	max-width:317px;
-}
 
 
 .aPop .popup_content h2
@@ -2404,16 +2400,16 @@ h2.pdf-heading
 {
 	box-shadow: none !important;
 }
-
+/* Brochure pop-up specific styles */
+#broPop .popup_img img{
+	width:48%;
+	max-width:317px;
+}
 
 @media screen and (max-width: 589px) {
 	.fancybox-opened,
 	.fancybox-inner{
 		width:300px !important;
-	}
-	.aPop
-	{
-		height: auto;
 	}
 	.aPop .popup_content
 	{

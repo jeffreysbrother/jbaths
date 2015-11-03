@@ -27,7 +27,6 @@
 				page.is('.page-walk-in')
 			  ) { return false } //early return skips everything below
 
-
 			if( jQuery.cookie("idlePagesLeft") && jQuery.cookie("idleCountdown") && jQuery.cookie("idleStamp")) {
 			    //ilding has been previously underway
 				pagesLeft = jQuery.cookie("idlePagesLeft");
@@ -102,7 +101,6 @@
 			</div>
 			<div class="clear"></div>
 		</div>
-		<div class="clear"></div>	
 	</div>
 	<?php
 		/* Its more effective to create template for Walk in page. But dont have wp-login so doing conditional check for this page. */
@@ -193,8 +191,7 @@
 							<img src="<?php bloginfo('template_url'); ?>/images/walkin_img.jpg" class="popup_img" />
 						</div>
 						<div class="clear"></div>
-					</div>
-					<div class="clear"></div>	
+					</div>	
 				</div>
 				
 			<?php 	
