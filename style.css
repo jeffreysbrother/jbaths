@@ -52,6 +52,9 @@ and Blueprint http://www.blueprintcss.org/
 12.0 - Media
 	12.1 - Captions
 	12.2 - Galleries
+
+13.0 - Popup (for brochure CTA)
+
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -2393,3 +2396,135 @@ h2.pdf-heading
 	}
 }
 
+
+/*--------------------------------------------------------------
+13.0 Popups
+--------------------------------------------------------------*/
+.broPop
+{
+	background: #FFF;
+	height: 384px;	
+}
+
+.broPop .close_popup
+{
+	background: #006a85;
+	padding: 10px 25px;
+	text-align: right;
+}
+
+.broPop .close_popup a
+{
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFF;
+	text-decoration: none;
+	font-family: "GSL";
+}
+
+.broPop .popup_content
+{
+	position:relative;
+	padding: 20px 20px 10px 40px;
+	float: left;
+	width: 51%;
+	z-index:100;
+}
+
+
+.broPop .popup_img
+{
+	text-align: center;
+	float:none;
+	z-index:0;
+}
+.broPop .popup_img img{
+	width:48%;
+	max-width:317px;
+}
+
+
+.broPop .popup_content h2
+{
+	font-size: 20px;
+	line-height: 1.4;
+	color: #006a85;
+	margin: 0px 0px 15px;
+	font-family: "GSL";
+	font-weight: 400;
+	text-transform:uppercase
+}
+
+.broPop .popup_content ul
+{
+	font-size: 16px;
+	line-height: 23px;
+	margin-bottom: 15px;
+	font-family: "Helvetica Neue";
+	font-weight: 300;
+}
+
+
+.broPop .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue
+{
+	margin-top:12px;
+	color: #006a85 !important;
+	border-color: #006a85 !important;
+}
+.broPop .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue:hover{
+	background-color:#006a85 !important;
+	color:#fff !important;
+}
+
+.fancybox-skin
+{
+	background: none !important;
+	padding: 0px !important;
+}
+
+.clear
+{
+ 	clear: both;
+ 	margin: 0 auto;	
+}
+
+.fancybox-opened .fancybox-skin
+{
+	box-shadow: none !important;
+}
+
+
+@media screen and (max-width: 589px) {
+	.fancybox-opened,
+	.fancybox-inner{
+		width:300px !important;
+	}
+	.broPop
+	{
+		height: auto;
+	}
+	.broPop .popup_content
+	{
+		width:auto;
+		float:none;
+		padding-left:30px;
+		text-align:center;
+	}
+	.broPop .popup_content h2,
+	.broPop .popup_content ul{
+		text-align:left;
+	}
+	.broPop .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue
+	{
+		text-align:center; 
+	}
+	.broPop .popup_img
+	{
+		position:relative;
+		left:3px;
+	}
+	.broPop .popup_img img{
+		width:100%;
+
+	}
+}

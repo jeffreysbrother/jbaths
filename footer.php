@@ -17,9 +17,15 @@
 			var msLeft,
 			    pagesLeft,
 			    idleTimeoutID,
-			    now;
+			    now,
+			    page = jQuery('body');
 
-			if( (jQuery.cookie('idlePopped') == "true" ) || ( jQuery('body').is('.page-brochure-request') ) ) return false;
+			if( jQuery.cookie('idlePopped') == "true" ||
+				page.is('.page-brochure-request') ||
+				page.is('.page-information') ||
+				page.is('.page-warranty-registration') ||
+				page.is('.page-walk-in')
+			  ) { return false } //early return skips everything below
 
 			if( jQuery.cookie("idlePagesLeft") && jQuery.cookie("idleCountdown") && jQuery.cookie("idleStamp")) {
 			    //ilding has been previously underway
@@ -82,7 +88,7 @@
 		<div class="clear"></div>		
 		<div class="wpb_row vc_row-fluid">
 			<div class="vc_span6 wpb_column popup_content">
-				<h2>Discover why a Jacuzzi<sup>®</sup> Bathtub is the right choice</h2>
+				<h2>Discover why a Jacuzzi<sup>®</sup>&nbsp;Bathtub is the right choice</h2>
 				<ul>
 					<li>See inside the structure of a Jacuzzi<sup>®</sup>&nbsp;Bathtub</li>
 					<li>Compare features across models</li>
