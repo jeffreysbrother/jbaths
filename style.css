@@ -2516,10 +2516,10 @@ h2.pdf-heading
 	padding: 0px !important;
 }
 
-.clear
+.aPop .clear
 {
  	clear: both;
- 	margin: 0 auto;	
+ 	margin: 0 auto;
 }
 
 .fancybox-opened .fancybox-skin
@@ -2545,20 +2545,23 @@ h2.pdf-heading
 		text-align:center;
 	}
 	.aPop .popup_content h2,
-	.aPop .popup_content ul{
+	.aPop .popup_content ul,
+	.aPop .popup_content p,
+	{
 		text-align:left;
 	}
 	.aPop .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue
 	{
 		text-align:center; 
 	}
-	.aPop .popup_img
-	{
-		position:relative;
-		left:3px;
-	}
 	.aPop .popup_img img{
 		width:100%;
 
+	}
+	/* Brochure pop-up specific styles */
+	#broPop .popup_img
+	{
+		position:relative;
+		left:3px;
 	}
 }
