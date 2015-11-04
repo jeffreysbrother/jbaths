@@ -121,22 +121,17 @@ if(is_page( 'walk-in' ))
 												closeBtn : false,
 												scrolling : 'no'
 											});
-
-			var	openpopupsess;
-			
 			//Session Logic
-			if(!jQuery.cookie('currentsession'))
+			if((jQuery.cookie('currentsession')) !== '1')
 			{
 				jQuery.cookie('currentsession', '1');
 				setTimeout(function(){
+					jQuery('.close_popup_link').on("click", function(e) {
+					    jQuery.fancybox.close(true);
+					});
 					jQuery("#openwalkinpopup").trigger('click');
 				}, 3000);
 			}
-			
-			jQuery('.close_popup_link').on("click", function(e) {
-			    jQuery.fancybox.close(true);
-			});
-
 		});
 	</script>
 	<div class="triggerlink" style="display:none !important"><a  href="#walkinpopup" id="openwalkinpopup"></a></div>
