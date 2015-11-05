@@ -645,8 +645,9 @@ div.gform_footer input[type="submit"], .green-btn {
 	position: relative;
 	text-shadow: none;
 	text-transform: uppercase;
-
 	transition: background-color 0.25s ease;
+	display: block !important;
+    margin: 0px auto;
 }
 div.gform_footer input[type="submit"]:hover, .green-btn:hover {
 	background-color: #014859;
