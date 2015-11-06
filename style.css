@@ -52,6 +52,9 @@ and Blueprint http://www.blueprintcss.org/
 12.0 - Media
 	12.1 - Captions
 	12.2 - Galleries
+
+13.0 - Popup (for brochure CTA)
+
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -1862,102 +1865,32 @@ h5 a:visited:hover {
 --------------------------------------------------------------*/
 
 /* Walk-In Popup */
-.walkinpopup
-{
-	background: #FFF;
-	height: 384px;	
-}
-
-.walkinpopup .close_popup
-{
-	background: #006a85;
-	padding: 10px 25px;
-	text-align: right;
-}
-
-.walkinpopup .close_popup a
-{
-	font-size: 12px;
-	line-height: 15px;
-	color: #FFF;
-	text-decoration: none;
-	font-family: "GSL";
-}
-
-.walkinpopup .popup_content
-{
-	padding: 40px 20px;
-	text-align: center;
-	float: left;
-	width: 50%;
-}
-
-
-.walkinpopup .popup_img
-{
-	text-align: right;
-	float: right;
-}
-
-
-.walkinpopup .popup_content h2
+#walkinpopup .popup_content h2
 {
 	font-size: 24px;
 	line-height: 30px;
-	color: #006a85;
-	margin: 0px 0px 25px;
-	font-family: "GSL";
-	font-weight: 400;
 }
-
-.walkinpopup .popup_content p
+#walkinpopup .popup_content p
 {
-	font-size: 14px;
-	line-height: 23px;
-	color: #000000;
-	margin-bottom: 15px;
-	font-family: "Helvetica Neue";
-	font-weight: 300;
+	margin-bottom:1em;
 }
-
-.vc_btn_grey.vc_btn_outlined.vc_btn_blue, .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue
-{
-	color: #006a85 !important;
-	border-color: #006a85 !important;
+#walkinpopup .popup_img{
+	text-align:right;
 }
-
-.fancybox-skin
-{
-	background: none !important;
-	padding: 0px !important;
+#walkinpopup .popup_img img{
+	width:49%;
 }
-
-.clear
-{
- 	clear: both;
- 	margin: 0 auto;	
-}
-
-.fancybox-opened .fancybox-skin
-{
-	box-shadow: none !important;
-}
-
-
-@media screen and (max-width: 899px) {
-	.walkinpopup
-	{
-		height: auto;
-	}
-	
+@media screen and (max-width: 589px) {
 		
-	.walkinpopup .popup_img
-	{
+	#walkinpopup .popup_img	{
 		text-align: center;
 	}
+	#walkinpopup .popup_img img{
+		width:auto;
+	}
 
 }
-	
+
 @media screen and (max-width: 768px) {
   .collection-row .wpb_single_image.vc_align_right {
     text-align:left;
@@ -2383,3 +2316,131 @@ h2.pdf-heading
 	}
 }
 
+
+/*--------------------------------------------------------------
+13.0 Popups
+--------------------------------------------------------------*/
+.aPop
+{
+	background: #FFF;
+}
+
+.aPop .close_popup
+{
+	background: #006a85;
+	padding: 10px 25px;
+	text-align: right;
+}
+
+.aPop .close_popup a
+{
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFF;
+	text-decoration: none;
+	font-family: "GSL";
+}
+.aPop .wpb_row.vc_row-fluid{
+	overflow: auto;
+}
+.aPop .popup_content
+{
+	position:relative;
+	padding: 20px 20px 10px 40px;
+	float: left;
+	width: 51%;
+	z-index:100;
+}
+.aPop .popup_img
+{
+	text-align: center;
+	float:none;
+	z-index:0;
+}
+.aPop .popup_img img
+{
+	display: block;
+}
+.aPop .popup_content h2
+{
+	font-size: 20px;
+	line-height: 1.4;
+	color: #006a85;
+	margin: 0px 0px 15px;
+	font-family: "GSL";
+	font-weight: 400;
+	text-transform:uppercase
+}
+.aPop .popup_content ul
+{
+	font-size: 16px;
+	line-height: 23px;
+	margin-bottom: 15px;
+	font-family: "Helvetica Neue";
+	font-weight: 300;
+}
+.aPop .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue
+{
+	margin-top:12px;
+	color: #006a85 !important;
+	border-color: #006a85 !important;
+}
+.aPop .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue:hover{
+	background-color:#006a85 !important;
+	color:#fff !important;
+}
+
+.fancybox-skin
+{
+	background: none !important;
+	padding: 0px !important;
+}
+
+.aPop .clear
+{
+ 	clear: both;
+ 	margin: 0 auto;
+}
+
+.fancybox-opened .fancybox-skin
+{
+	box-shadow: none !important;
+}
+/* Brochure pop-up specific styles */
+#broPop .popup_img img{
+	width:48%;
+	max-width:317px;
+}
+
+@media screen and (max-width: 589px) {
+	.fancybox-opened,
+	.fancybox-inner{
+		width:300px !important;
+	}
+	.aPop .popup_content
+	{
+		width:auto;
+		float:none;
+		padding-left:30px;
+		text-align:center;
+	}
+	.aPop .popup_content h2,
+	.aPop .popup_content ul,
+	.aPop .popup_content p
+	{
+		text-align:left;
+	}
+	.aPop .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue
+	{
+		text-align:center; 
+	}
+	.aPop .popup_img img{
+		width:auto !important;
+	}
+	/* Brochure pop-up specific styles */
+	#broPop .popup_img
+	{
+		position:relative;
+		left:3px;
+	}
+}
