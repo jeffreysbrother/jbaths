@@ -58,7 +58,7 @@ if(is_page( 'walk-in' ))
                   <small>Walk-In Bathtub</small><br></h2>
 				<p>Blends safety and hydromassage to keep you healthy and happy in your home. Designed to fit in place of a standard bathtub. Also comes in compact and large sizes. Lifetime warranty.</p>
 				<a href="http://www.hydrotherapybathing.com/about-walk-in-tubs/" class="vc_btn vc_btn_grey vc_btn_md vc_btn_square_outlined vc_btn_blue">LEARN MORE</a>
-				<p style="margin-top:13px;"><small>DIY or installing yourself? <a href="/baths/bathtubs/finestra-bath/">Click here</a>.</small></p>
+				<p style="margin-top:13px;"><small>DIY or installing yourself? <a href="/baths/bathtubs/finestra-bath/">Click here</a></small></p>
 			</div>
 			<div class="vc_span6 wpb_column popup_img">
 				<img src="<?php bloginfo('template_url'); ?>/images/walkin_img.jpg" class="popup_img" />
