@@ -277,6 +277,9 @@ function jbaths_shortcode_bathdls( $atts ) {
 				case 'signature':
 					$term_id = 8;
 					break;
+				case 'jacuzzi-bath':
+					$term_id = 47;
+					break;	
 			}
 			if ( $term_id == false ) {
 				$oot .= '<!-- "bathscat" missing? -->';

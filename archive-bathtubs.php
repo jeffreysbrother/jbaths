@@ -77,7 +77,7 @@ while ( $f-- ) {
 	}
 	if ( $f == 2 ) {
 		$args['orderby'] = 'name';
-		$args['order'] = 'ASC';
+		$args['order'] = 'DESC';
 		$args['exclude'] = array(6,5);
 	}
 	$filters[$f][1] = get_terms( $fname, $args );
