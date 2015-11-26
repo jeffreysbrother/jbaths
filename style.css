@@ -654,11 +654,12 @@ div.gform_footer input[type="submit"]:hover {
 	background-color: #014859;
 	color: #fff;
 }
+/*
 div.gform_footer input#gform_submit_button_2 {
 	bottom: -28px;
 	margin-left: -119px;
 }
-
+*/
 .green-btn {
 	border: 2px solid #e1e1e1;
 	border-radius: 0;
