@@ -2369,7 +2369,7 @@ h2.pdf-heading
 	position:relative;
 	padding: 20px 20px 10px 40px;
 	float: left;
-	width: 51%;
+	width: 66%;
 	z-index:100;
 }
 .aPop .popup_img
@@ -2429,8 +2429,8 @@ h2.pdf-heading
 }
 /* Brochure pop-up specific styles */
 #broPop .popup_img img{
-	width:48%;
-	max-width:317px;
+	width:34%;
+	max-width:242px;
 }
 
 @media screen and (max-width: 589px) {
@@ -2462,6 +2462,6 @@ h2.pdf-heading
 	#broPop .popup_img
 	{
 		position:relative;
-		left:3px;
+		left:20px;
 	}
 }
