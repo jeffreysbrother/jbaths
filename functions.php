@@ -277,6 +277,9 @@ function jbaths_shortcode_bathdls( $atts ) {
 				case 'signature':
 					$term_id = 8;
 					break;
+				case 'jacuzzi-bath':
+					$term_id = 47;
+					break;	
 			}
 			if ( $term_id == false ) {
 				$oot .= '<!-- "bathscat" missing? -->';
@@ -442,7 +445,8 @@ function add_wheretobuy_to_menu( $items, $args ) {
     	$items .= '<li class="menu-item menu-item-search last">';
 		$items .= '<a id="show-search-form" href="#search">Search</a>';
 		$items .= '</li>';
-		$items .= '<li id="menu-item-where-to-buy" class="where-to-buy menu-item"><a href="'.get_bloginfo('url').'/find-a-showroom/">Where To Buy</a></li>';
+		$items .= '<li id="menu-item-where-to-buy" class="where-to-buy menu-item"><a href="'.get_bloginfo('url').'/find-a-showroom/">Showrooms</a></li>';
+		$items .= '<li id="menu-item-borchure-request" class="brochure-request menu-item"><a href="'.get_bloginfo('url').'/information/brochure-request/">Brochure</a></li>';
 		return $items;
 	}
     return $items;
