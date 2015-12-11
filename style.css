@@ -2369,7 +2369,7 @@ h2.pdf-heading
 	position:relative;
 	padding: 20px 20px 10px 40px;
 	float: left;
-	width: 66%;
+	width: auto;
 	z-index:100;
 }
 .aPop .popup_img
@@ -2427,7 +2427,15 @@ h2.pdf-heading
 {
 	box-shadow: none !important;
 }
+/* Walk-in pop-up specific styles */
+#walkinpopup .popup_content{
+	width:51%;
+}
+
 /* Brochure pop-up specific styles */
+#broPop .popup_content{
+	width:66%;
+}
 #broPop .popup_img img{
 	width:34%;
 	max-width:242px;
