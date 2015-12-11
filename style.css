@@ -2758,6 +2758,13 @@ a#logo {
     margin-top: 30px;
 }
 
+
+.installation-cta.cta-jacuzzi
+{
+	border-right: 2px solid #FFF;
+}
+
+
 @media screen and (max-width: 767px) {
 	
 	.main-navigation li a
@@ -2792,5 +2799,12 @@ a#logo {
     	float: none;
     	width: 100%;
     	color: #fff;
+    }
+    
+    
+    .installation-cta 
+    {
+    	border: 0px solid #FFF;
+    	text-align: center;
     }
 }	
