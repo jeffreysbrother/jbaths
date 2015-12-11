@@ -2765,6 +2765,107 @@ a#logo {
 }
 
 
+/* Showroom Updates */
+
+.online-retailers-block
+{
+	margin: 40px 0px 20px;
+}
+
+.online-retailers-block .eachOnlineRetailers
+{
+	width: 31.5%;
+	float: left;
+	margin: 0px 1.5% 20px;
+	padding: 30px;
+	border: 1px solid #d7d7d7;
+	background: #FFF;
+	max-width: 405px;
+}
+
+.online-retailers-block .eachOnlineRetailers.buildcom
+{
+	background: url("images/newdesign/build_logo.jpg") no-repeat 30px 16px #FFF;
+}
+
+.online-retailers-block .eachOnlineRetailers.ferguson
+{
+	background: url("images/newdesign/ferguson_logo.jpg") no-repeat 30px 34px #FFF;
+}
+
+.online-retailers-block .eachOnlineRetailers.lowes
+{
+	background: url("images/newdesign/lowes_logo.jpg") no-repeat 30px 24px #FFF;
+}
+
+.online-retailers-block .eachOnlineRetailers:first-child
+{
+	margin-left: 0px;	
+}
+
+.online-retailers-block .eachOnlineRetailers:last-child
+{
+	margin-right: 0px;	
+}
+
+
+.online-retailers-block .eachOnlineRetailers ul
+{
+	float: right;
+	margin-top: 3px;
+	margin-bottom: 10px;
+}
+
+.online-retailers-block .eachOnlineRetailers ul li
+{
+	float: left;
+	list-style: none;
+	padding: 0px 15px;	
+}
+
+.online-retailers-block .eachOnlineRetailers ul li:first-child
+{
+	border-right: 1px solid #ccc;	
+}
+
+.online-retailers-block .eachOnlineRetailers ul li.cart-link-retailer a
+{
+	display: block;
+	text-indent: -9999px;
+	background: url("images/newdesign/cart_icon.png") no-repeat center center transparent;
+	width: 32px;
+	height: 26px;
+	outline: none;	
+}
+
+.online-retailers-block .eachOnlineRetailers ul li.phone-link-retailer a
+{
+	display: block;
+	text-indent: -9999px;
+	background: url("images/newdesign/phone_icon.png") no-repeat center center transparent;
+	width: 23px;
+	height: 26px;
+	font-size: 16px;
+	line-height: 26px;
+	color: #0a7799;
+	outline: none;
+	-webkit-transition: width 0.4s; /* Safari */
+    transition: width 0.4s;
+}
+
+.online-retailers-block .eachOnlineRetailers ul li.phone-link-retailer a.activated
+{
+	text-indent: 0px;
+	background: none;
+	width: auto;
+}
+
+.clear
+{
+	clear: both;
+	margin: 0px auto;
+}
+
 @media screen and (max-width: 767px) {
 	
 	.main-navigation li a
@@ -2806,5 +2907,24 @@ a#logo {
     {
     	border: 0px solid #FFF;
     	text-align: center;
+    }
+    
+    
+    .online-retailers-block .eachOnlineRetailers
+    {
+    	float: none;
+    	width: 100%;
+    	margin: 20px 0px !important;
+    	min-height: 80px;
+    }
+}	
+
+@media screen and (max-width: 1080px) {
+	.online-retailers-block .eachOnlineRetailers
+    {
+    	float: none;
+    	width: 100%;
+    	margin: 20px 0px !important;
+    	min-height: 80px;
     }
 }	

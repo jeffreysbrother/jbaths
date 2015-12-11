@@ -532,3 +532,25 @@ jQuery(function($){
 	$('div.gform_wrapper form.two_col_form ul.gform_fields').children('li').remove();
 });
 */
+
+/* For Phone Toggle */
+jQuery(function($){
+	$('.phone-link-retailer a').click(function(){
+		if(detectmob()){
+			return true;	
+		}
+		else
+		{
+			$(this).toggleClass('activated');
+			return false;
+		}
+	});
+});
+
+function detectmob() {
+   if(window.innerWidth <= 767) {
+     return true;
+   } else {
+     return false;
+   }
+}
