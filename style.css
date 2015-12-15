@@ -2786,9 +2786,13 @@ a#logo {
 
 .site-content {
     position: relative;
-    margin-top: 0px;
+    margin-top: 30px;
 }
 
+.home .site-content {
+    position: relative;
+    margin-top: 0px;
+}
 
 .installation-cta.cta-jacuzzi
 {
