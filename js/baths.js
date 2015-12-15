@@ -341,7 +341,7 @@ jQuery(function($){
 	// Menu width fix for IE/Safari
 	function baths_menu_width_fix() {
 		var hw = $('#masthead').width(), // header width
-			lw = Math.max( $('div.site-branding').width(), 160); // logo width with padding
+			lw = Math.max( $('div.site-branding').width(), 210); // logo width with padding
 		return ( hw - lw );
 	}
 	// set width on page load
