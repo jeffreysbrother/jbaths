@@ -341,7 +341,7 @@ jQuery(function($){
 	// Menu width fix for IE/Safari
 	function baths_menu_width_fix() {
 		var hw = $('#masthead').width(), // header width
-			lw = Math.max( $('div.site-branding').width(), 160); // logo width with padding
+			lw = Math.max( $('div.site-branding').width(), 210); // logo width with padding
 		return ( hw - lw );
 	}
 	// set width on page load
@@ -532,3 +532,25 @@ jQuery(function($){
 	$('div.gform_wrapper form.two_col_form ul.gform_fields').children('li').remove();
 });
 */
+
+/* For Phone Toggle */
+jQuery(function($){
+	$('.phone-link-retailer a').click(function(){
+		if(detectmob()){
+			return true;	
+		}
+		else
+		{
+			$(this).toggleClass('activated');
+			return false;
+		}
+	});
+});
+
+function detectmob() {
+   if(window.innerWidth <= 767) {
+     return true;
+   } else {
+     return false;
+   }
+}
