@@ -3069,6 +3069,16 @@ a#logo {
 	bottom: 35px;
 }
 
+.site-footer
+{
+	background: rgb(239, 239, 239);
+}
+
+.site-footer, .site-footer a
+{
+	color: #555;
+}
+
 @media screen and (max-width: 1260px)
 {
 	.home .tp-parallax-wrap .tp-mask-wrap .tp-caption.tp-shape.tp-shapewrapper
@@ -3131,6 +3141,10 @@ a#logo {
 		padding-left: 1em;
 	}
 	
+	.site-content
+	{
+		margin-top: 90px;
+	}
 }
 
 <<<<<<< HEAD
@@ -3321,6 +3335,11 @@ a#logo {
     	width: 100%;
     	margin: 20px 0px !important;
     	min-height: 80px;
+    }
+    
+    .main-navigation li ul.sub-menu a, .main-navigation li a
+    {
+    	color: #000 !important;
     }
 }	
 
