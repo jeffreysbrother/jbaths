@@ -2643,7 +2643,7 @@ a#logo {
 
 .main-navigation li.where-to-buy a
 {
-	color: #636363;
+	color: #000;
 	font-family: "GSMT";
 	font-size: 13px;
 	letter-spacing: 1px;
@@ -2651,7 +2651,7 @@ a#logo {
 
 .main-navigation li.menu-item-search a#show-search-form
 {
-	color: #636363;
+	color: #000;
 	font-family: "GSMT";
 	font-size: 13px;
 	letter-spacing: 1px;
@@ -2931,7 +2931,7 @@ a#logo {
 	
 	.main-navigation li.brochure-request
 	{
-		top: 0px;
+		top: 3px;
 		padding-top: 4px;
 	}
 	
