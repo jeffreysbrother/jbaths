@@ -278,7 +278,7 @@ function jbaths_shortcode_bathdls( $atts ) {
 					$term_id = 8;
 					break;
 				case 'jacuzzi-bath':
-					$term_id = 47;
+					$term_id = 44;
 					break;	
 			}
 			if ( $term_id == false ) {
