@@ -183,7 +183,8 @@ h6,
 .title,
 a.ui-tabs-anchor,
 .vc_btn,
-.vc_span3.bathtub .ld div {
+.vc_span3.bathtub .ld div,
+#responsive-menu {
 	font-family: "GSL", sans-serif;
 	font-weight: normal;
 }
@@ -848,7 +849,8 @@ body.touch .main-navigation ul li.open > ul {
 	width: 0px;
 	z-index: 9;
 }
-.main-navigation form.search-form input.search-field {
+.main-navigation form.search-form input.search-field,
+#responsive-menu #responsiveSearchInput {
 	background-color: #333;
 	border: none;
 	border-radius: 0;
@@ -860,7 +862,8 @@ body.touch .main-navigation ul li.open > ul {
 	height: 100%;
 	width: 100%;
 }
-.main-navigation form.search-form input.search-submit {
+.main-navigation form.search-form input.search-submit,
+#responsive-menu #responsiveSearchSubmit {
 	background-color: transparent;
 	background-image: url(images/menu-top-icon-search-close.png);
 	background-repeat: no-repeat;
@@ -881,6 +884,7 @@ body.touch .main-navigation ul li.open > ul {
 .main-navigation form.search-form input.search-submit.do-search {
 	background-image: url(images/menu-top-icon-search.png);
 }
+
 /* WHERE TO BUY */
 .main-navigation li.where-to-buy {
 	float: right;
@@ -914,13 +918,55 @@ body.touch .main-navigation ul li.open > ul {
 	box-shadow: none;
 }
 @media screen and (max-width: 999px) {
+	/* Responsive Menu Plugin */
+	#click-menu{
+		width:78px;
+		border-radius:4px;
+	}
+	#click-menu img{
+		float:right;
+		margin-top:3px;
+	}
+	#responsive-menu{
+		background:#fff;
+	}
+	#responsive-menu ul.sub-menu{
+		margin-left:0;
+	}
+	#responsive-menu .appendLink{
+		background:inherit;
+		border:none;
+		color:#666;
+	}
+	#responsive-menu li.menu-item a{
+		color:#000;
+		text-transform:uppercase;
+		letter-spacing:2px;
+		border-top-color:#eee;
+	}
+	#responsive-menu li.menu-item a:hover,
+	#responsive-menu .appendLink:hover{
+		background:#f6f6f6;
+		color:#000;
+	}
+	#responsive-menu #responsiveSearch{
+		border-top-color:#eee;
+		width:100%;
+	}
+	#responsive-menu #responsiveSearchInput {
+		padding: 0 30px 0 16px;
+		height: 40px;
+		width:90%;
+		background:#eee;
+		color:#000;
+	}
 	.main-navigation {
 		clear: both;
 		display: block;
 		float: left;
 		width: 100%;
 	}
-	.menu-toggle {
+	.menu-toggle, #click-menu {
 		display: block;
 		position: absolute;
 		top: 27px;
@@ -984,12 +1030,13 @@ body.touch .main-navigation ul li.open > ul {
 		width: calc(100% - 30px) !important;
 		z-index: 99999;
 	}
-	.main-navigation.toggled form.search-form input.search-field {
+	.main-navigation.toggled form.search-form input.search-field{
 		padding: 0 30px 0 16px;
 		height: 40px;
 		width: 100%;
 	}
-	.main-navigation.toggled form.search-form input.search-submit {
+	.main-navigation.toggled form.search-form input.search-submit,
+	#responsive-menu #responsiveSearchSubmit {
 		background-image: url(images/menu-top-icon-search.png);
 		right: 20px;
 	}
