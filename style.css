@@ -922,6 +922,7 @@ body.touch .main-navigation ul li.open > ul {
 	#click-menu{
 		width:78px;
 		border-radius:4px;
+		background-color: #464646;
 	}
 	#click-menu img{
 		float:right;
@@ -929,6 +930,21 @@ body.touch .main-navigation ul li.open > ul {
 	}
 	#responsive-menu{
 		background:#fff;
+		max-height:64em;
+		overflow:hidden;
+	}
+	#responsive-menu #responsive-menu-title{
+		background:#eee;
+		padding:0;
+		width:100%;
+	}
+	#responsive-menu #responsive-menu-title a{
+		padding: 2em 5%;
+		display:block;
+		background:#eee;
+	}
+	#responsive-menu .responsive-menu li.current-menu-item a{
+		background: #464646;
 	}
 	#responsive-menu ul.sub-menu{
 		margin-left:0;
@@ -938,14 +954,17 @@ body.touch .main-navigation ul li.open > ul {
 		border:none;
 		color:#666;
 	}
-	#responsive-menu li.menu-item a{
+	#responsive-menu li.menu-item a,
+	#responsive-menu #responsive-menu-title a{
 		color:#000;
 		text-transform:uppercase;
 		letter-spacing:2px;
 		border-top-color:#eee;
+		transition: background-color .3s linear;
 	}
 	#responsive-menu li.menu-item a:hover,
-	#responsive-menu .appendLink:hover{
+	#responsive-menu .appendLink:hover,
+	#responsive-menu #responsive-menu-title a:hover{
 		background:#f6f6f6;
 		color:#000;
 	}
@@ -956,9 +975,22 @@ body.touch .main-navigation ul li.open > ul {
 	#responsive-menu #responsiveSearchInput {
 		padding: 0 30px 0 16px;
 		height: 40px;
-		width:90%;
+		width: 85%;
 		background:#eee;
 		color:#000;
+		vertical-align:middle;
+	}
+	#responsive-menu #responsiveSearchSubmit{
+		border: 0;
+		width: 40px;
+		height: 40px;
+		background: url(images/menu-top-icon-search.png) no-repeat center #464646 ;
+		top: auto;
+		position: relative;
+		display: initial;
+		margin: 0 0 0 -3%;
+		right: auto;
+		vertical-align:middle;
 	}
 	.main-navigation {
 		clear: both;
@@ -1035,8 +1067,7 @@ body.touch .main-navigation ul li.open > ul {
 		height: 40px;
 		width: 100%;
 	}
-	.main-navigation.toggled form.search-form input.search-submit,
-	#responsive-menu #responsiveSearchSubmit {
+	.main-navigation.toggled form.search-form input.search-submit{
 		background-image: url(images/menu-top-icon-search.png);
 		right: 20px;
 	}
