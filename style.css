@@ -2618,6 +2618,12 @@ h2.pdf-heading
 	color:#fff !important;
 }
 
+.fancybox-overlay{
+	z-index:10010 !important;
+}
+.fancybox-wrap{
+	z-index:10020 !important;
+}
 .fancybox-skin
 {
 	background: none !important;
