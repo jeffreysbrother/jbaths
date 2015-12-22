@@ -3252,7 +3252,7 @@ a#logo {
 	padding: 30px;
 	border: 1px solid #d7d7d7;
 	background: #FFF;
-	max-width: 405px;
+	max-width: 350px;
 }
 
 .online-retailers-block .eachOnlineRetailers.buildcom
@@ -3425,7 +3425,7 @@ a#logo {
     }
 }	
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1220px) {
 	.online-retailers-block .eachOnlineRetailers
     {
     	float: none;
