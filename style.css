@@ -972,17 +972,16 @@ body.touch .main-navigation ul li.open > ul {
 		background: linear-gradient(to right, rgba(255,255,255,0), #f6f6f6)
 	}
 	#responsive-menu .appendLink:after{
-		font-size:.66em;
 		content:'▽';
 		text-indent:0;
 		position:absolute;
-		left:2.5%; top:1.44em;
+		right:3%; top:.9em;
 		transition: transform .3s linear;
 		transform-origin:center;
 	}
 	#responsive-menu .appendLink.rm-append-inactive:after{
 		content:'▼';
-		transform: rotateZ(-90deg);
+		transform: rotateZ(90deg);
 	}
 	#responsive-menu li.menu-item a,
 	#responsive-menu #responsive-menu-title a{
