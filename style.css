@@ -946,16 +946,43 @@ body.touch .main-navigation ul li.open > ul {
 		display:block;
 		background:#eee;
 	}
-	#responsive-menu .responsive-menu li.current-menu-item a{
-		background: #464646;
+	#responsive-menu .responsive-menu li.current-menu-item a,
+	#responsive-menu .responsive-menu li.current-menu-item a:hover{
+		border-top-color:#555;
+		background: #696969;
+		color:#fff;
+		background-image:linear-gradient(to bottom, #666, #777 3%, #777 47%, #666);
 	}
 	#responsive-menu ul.sub-menu{
 		margin-left:0;
 	}
 	#responsive-menu .appendLink{
-		background:inherit;
+		background:transparent;
 		border:none;
-		color:#666;
+		color: inherit;
+		position:absolute;
+		left:0;
+		right:0;
+		height:100%;
+		padding:0;
+		text-indent:-1em;
+	}
+	#responsive-menu .appendLink:hover{
+		color: #C49E0D;
+		background: linear-gradient(to right, rgba(255,255,255,0), #f6f6f6)
+	}
+	#responsive-menu .appendLink:after{
+		font-size:.66em;
+		content:'▽';
+		text-indent:0;
+		position:absolute;
+		left:2.5%; top:1.44em;
+		transition: transform .3s linear;
+		transform-origin:center;
+	}
+	#responsive-menu .appendLink.rm-append-inactive:after{
+		content:'▼';
+		transform: rotateZ(-90deg);
 	}
 	#responsive-menu li.menu-item a,
 	#responsive-menu #responsive-menu-title a{
@@ -966,7 +993,6 @@ body.touch .main-navigation ul li.open > ul {
 		transition: background-color .3s linear;
 	}
 	#responsive-menu li.menu-item a:hover,
-	#responsive-menu .appendLink:hover,
 	#responsive-menu #responsive-menu-title a:hover{
 		background:#f6f6f6;
 		color:#000;
