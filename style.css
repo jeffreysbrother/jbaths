@@ -3150,7 +3150,8 @@ a#logo {
 @media screen and (max-width: 999px) {
 	.easy_style_block
 	{
-		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom: 4px solid #EEE;
 	}
 	.easy_style_block .textblock
 	{
@@ -3262,4 +3263,19 @@ a#logo {
 		bottom: 27px;
 		left: 40px;
 	}	
+	
+	.home .tp-caption.excerpt .fullwidthcaption
+	{
+		font-size: 24px !important;
+		letter-spacing: 0px !important;
+	}
+	.home .tp-parallax-wrap .tp-mask-wrap .tp-caption.tp-shape.tp-shapewrapper
+	{
+		background: transparent !important;
+	}
+	.home .tp-caption.BUTTON a
+	{
+		padding: 7.55px 25px !important;
+		background: rgba(255, 255, 255, 0.8);
+	}
 }	
