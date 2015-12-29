@@ -3188,6 +3188,116 @@ a#logo {
 	color: #555;
 }
 
+
+/* Top Menu*/
+.top_menu
+{
+	width: 100%;
+	position: relative;
+	max-width: 750px;
+	float: right;
+}
+
+.top_menu ul
+{
+	margin: 0px;
+	padding: 0px;
+	max-width: 350px;
+	width: 100%;
+	float: right;
+}
+
+.top_menu ul li
+{
+	float: left;
+	list-style: none;
+	border-left: 1px solid #E1E1E1;
+	padding: 0px 10px;
+}
+
+.top_menu ul li a
+{
+	display: block;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	color: #000;
+	font-family: "GSMT";
+	padding-left: 24px;
+	height: 24px;
+	text-decoration: none !important;
+}
+
+.top_menu ul li a
+{
+	color: #333;
+}
+
+.top_menu li.brochure-request a
+{
+	background: transparent url("images/newdesign/brochure_icon.png") no-repeat scroll 0px 0px;
+}
+
+.top_menu li.where-to-buy a
+{
+	background: transparent url("images/newdesign/showroom_icon.png") no-repeat scroll 0px 0px;
+}
+
+.top_menu li.menu-item-search a#show-search-form
+{
+    background: transparent url("images/newdesign/glass_icon.png") no-repeat scroll 0px 2px;
+}
+
+/* SEARCH FORM */
+
+.top_menu form.search-form {
+	background-color: #262626;
+	display: block;
+	height: 50px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: -10px;
+	width: 0px;
+	z-index: 9;
+}
+.top_menu form.search-form input.search-field{
+	background-color: #333;
+	border: none;
+	border-radius: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 30px;
+	font-family: "GSL";
+	padding-left: 16px;
+	height: 100%;
+	width: 100%;
+}
+.top_menu form.search-form input.search-submit,
+#responsive-menu #responsiveSearchSubmit {
+	background-color: transparent;
+	background-image: url(images/menu-top-icon-search-close.png);
+	background-repeat: no-repeat;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	color: transparent;
+	display: block;
+	height: 20px;
+	margin-top: -12px;
+	padding: 0px;
+	position: absolute;
+	right: 30px;
+	text-shadow: none;
+	top: 50%;
+	width: 20px;
+}
+.top_menu form.search-form input.search-submit.do-search {
+	background-image: url(images/menu-top-icon-search.png);
+}
+
+
+
 @media screen and (max-width: 1260px)
 {
 	.home .tp-parallax-wrap .tp-mask-wrap .tp-caption.tp-shape.tp-shapewrapper
@@ -3385,6 +3495,12 @@ a#logo {
 		max-width: 100%;
 		padding: 5px 20px 20px;
 		text-align: center;
+	}
+	
+	
+	.top_menu
+	{
+		display: none !important;
 	}
 	
 	
