@@ -26,13 +26,22 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'jbaths' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+		<div class="top_menu">
+			<?php echo custom_search_form(); ?>
+			<ul class="topmenu">
+				<li id="menu-item-borchure-request" class="brochure-request menu-item"><a href="'.get_bloginfo('url').'/information/brochure-request/">Brochure</a></li>
+				<li id="menu-item-where-to-buy" class="where-to-buy menu-item"><a href="'.get_bloginfo('url').'/find-a-showroom/">Showrooms</a></li>
+				<li class="menu-item menu-item-search last"><a id="show-search-form" href="#search">Search</a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
 		<div class="site-branding">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" id="logo"><?php bloginfo( 'name' ); ?></a>
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle"><?php _e( 'Menu', 'jbaths' ); ?></button>
-			<?php echo custom_search_form(); ?>
+			<?php //echo custom_search_form(); ?>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

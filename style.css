@@ -699,7 +699,7 @@ div.gform_footer input#gform_submit_button_2 {
 	}
 	.site-header {
 		box-sizing: border-box;
-		height: 84px;
+		height: 108px;
 		position: fixed;
 		top: 0px;
 		width: 100%;
@@ -3117,7 +3117,7 @@ a#logo {
 @media screen and (max-width: 1259px) and (min-width: 999px) {
 	#site-navigation
 	{
-		width: 100% !important;
+		xwidth: 100% !important;
 	}
 	
 	.main-navigation #menu-main-menu > li:first-child
@@ -3143,7 +3143,7 @@ a#logo {
 	
 	.site-content
 	{
-		margin-top: 90px !important;
+		xmargin-top: 90px !important;
 	}
 }
 
