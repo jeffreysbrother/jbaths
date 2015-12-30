@@ -2776,11 +2776,11 @@ a#logo {
 {
 	width: 31.5%;
 	float: left;
-	margin: 0px 1.5% 20px;
-	padding: 30px;
+	margin: 0px 1% 20px;
+	padding: 30px 15px;
 	border: 1px solid #d7d7d7;
 	background: #FFF;
-	max-width: 350px;
+	max-width: 400px;
 }
 
 .online-retailers-block .eachOnlineRetailers.buildcom
@@ -2919,7 +2919,7 @@ a#logo {
     }
 }	
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1280px) {
 	.online-retailers-block .eachOnlineRetailers
     {
     	float: none;
