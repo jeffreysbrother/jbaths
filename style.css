@@ -692,7 +692,16 @@ div.gform_footer input#gform_submit_button_2 {
 	background: #262626;
 	padding: 12px 10px 18px 20px;
 	position: relative;
+	top: 30px !important;
 }
+
+.home .site-header {
+	background: #262626;
+	padding: 12px 10px 18px 20px;
+	position: relative;
+	top: 0px !important;
+}
+
 @media screen and (min-width: 1000px) {
 	html {
 		xpadding-top: 84px; /* space for top menu/header */
@@ -1116,7 +1125,7 @@ body.touch .main-navigation ul li.open > ul {
 	position: relative;
 }
 .entry-header {
-	background: #464646;
+	background: #797979;
 	color: #fff;
 	display: block;
 	/*float: left;*/
