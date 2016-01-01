@@ -696,7 +696,7 @@ div.gform_footer input#gform_submit_button_2 {
 }
 
 .home .site-header {
-	background: #262626;
+	background: #FFF;
 	padding: 12px 10px 18px 20px;
 	position: relative;
 	top: 0px !important;
@@ -3135,17 +3135,20 @@ a#logo {
 
 .top_menu li.brochure-request a
 {
-	background: transparent url("images/newdesign/brochure_icon.png") no-repeat scroll 0px 0px;
+	background: transparent url("images/newdesign/brochure_icon_v2.png") no-repeat scroll 0px 0px;
+	color: #0A7799;
 }
 
 .top_menu li.where-to-buy a
 {
-	background: transparent url("images/newdesign/showroom_icon.png") no-repeat scroll 0px 0px;
+	background: transparent url("images/newdesign/showroom_icon_v2.png") no-repeat scroll 0px 0px;
+	color: #0A7799;
 }
 
 .top_menu li.menu-item-search a#show-search-form
 {
-    background: transparent url("images/newdesign/glass_icon.png") no-repeat scroll 0px 2px;
+    background: transparent url("images/newdesign/glass_icon_v2.png") no-repeat scroll 0px 2px;
+    color: #0A7799;
 }
 
 /* SEARCH FORM */
@@ -3267,10 +3270,16 @@ a#logo {
 }
 
 @media screen and (max-width: 999px) {
+	.hero_image_container .vc_col-sm-5, .hero_image_container .vc_col-sm-7 
+	{
+		width: 100%;
+		float: none;
+	}
+	
 	.easy_style_block
 	{
 		padding-bottom: 30px;
-		border-bottom: 4px solid #EEE;
+		border-bottom: 30px solid #EEE;
 	}
 	.easy_style_block .textblock
 	{
