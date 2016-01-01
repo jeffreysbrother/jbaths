@@ -6,11 +6,11 @@
 jQuery(function($){
 	// wp-admin bar fix
 	if( $('div#wpadminbar').is(":visible") && $(window).width() >= 1000 ){
-		$('header.site-header').css('top', 32);
+		$('header.site-header').css('top', 0);
 	}
 	$( window ).resize(function() {
 		if( $('div#wpadminbar').is(":visible") && $(window).width() >= 1000 ){
-			$('header.site-header').css('top', 32);
+			$('header.site-header').css('top', 0);
 		} else {
 			$('header.site-header').css('top', 0);
 		}
