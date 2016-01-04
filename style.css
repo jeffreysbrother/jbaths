@@ -451,7 +451,7 @@ input[type="search"]::-webkit-search-results-decoration,
 input::-ms-clear,
 input::-ms-reveal,
 input[type="search"]::-ms-clear,
-input[type="search"]::-ms-reveal { 
+input[type="search"]::-ms-reveal {
 	display: none !important;
 	width : 0;
 	height: 0;
@@ -1449,6 +1449,10 @@ div.rev_slider_wrapper div.rev_slider ul div.tp-caption {
 	font-family: "GSL";
 }
 
+.tp-bullets.simplebullets {
+	display: none;
+}
+
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
@@ -1665,7 +1669,7 @@ div.rev_slider_wrapper div.rev_slider ul div.tp-caption {
 	border-top: 8px solid #ebebeb;
 	margin: 0;
 	width: 11em;
-	
+
 	-webkit-transition: width 400ms;
 	-moz-transition: width 400ms;
 	transition: width 400ms;
@@ -1902,7 +1906,7 @@ h5 a:visited:hover {
 	width:49%;
 }
 @media screen and (max-width: 589px) {
-		
+
 	#walkinpopup .popup_img	{
 		text-align: center;
 	}
@@ -2327,7 +2331,7 @@ h2.pdf-heading
 	padding-right: 70px;
 	line-height: 70px !important;
 	background: url("images/pdf_download.png") right center no-repeat transparent;
-	display: inline-block;	
+	display: inline-block;
 }
 
 @media screen and (max-width: 767px) {
@@ -2461,7 +2465,7 @@ h2.pdf-heading
 	}
 	.aPop .vc_btn_grey.vc_btn_square_outlined.vc_btn_blue
 	{
-		text-align:center; 
+		text-align:center;
 	}
 	.aPop .popup_img img{
 		width:auto !important;
